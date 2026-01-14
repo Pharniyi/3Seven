@@ -1,0 +1,500 @@
+/* ============================================
+   OUR STORY PAGE - RESPONSIVE CSS
+   ============================================ */
+
+/* 1024px Breakpoint - Match navbar height exactly (160px) */
+@media (min-width: 1024px) and (max-width: 1024px) {
+    /* Remove any navbar padding that could cause gaps */
+    body.our-story-page .navbar {
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+    
+    /* Hero Section - Match navbar height exactly */
+    .our-story-hero {
+        margin-top: 160px;
+        margin-bottom: 0;
+        padding-top: 0;
+    }
+    
+    /* Ensure hero background has no spacing */
+    .our-story-hero-background {
+        margin-top: 0;
+        padding-top: 0;
+    }
+}
+
+/* Tablet Styles (769px - 1023px) - Critical for image/content sections */
+@media (min-width: 769px) and (max-width: 1023px) {
+    /* Remove any navbar padding that could cause gaps */
+    body.our-story-page .navbar {
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+    
+    /* About Section - Stack image and content vertically */
+    .our-story-about-container {
+        flex-direction: column;
+    }
+
+    .our-story-about-image {
+        width: 100%;
+        max-width: 503px;
+        height: 360px;
+    }
+
+    /* Creative Spirit Section - Stack image and content vertically */
+    .our-story-creative-spirit-container {
+        flex-direction: column;
+    }
+
+    .our-story-creative-spirit-images {
+        width: 100%;
+        max-width: 608px;
+        height: 360px;
+    }
+
+    /* Hero Section - Match navbar height exactly (140px) */
+    .our-story-hero {
+        height: auto;
+        min-height: 500px;
+        margin-top: 140px;
+        margin-bottom: 0;
+        padding: 0 var(--spacing-6);
+        padding-top: 0;
+    }
+    
+    /* Ensure hero background has no spacing */
+    .our-story-hero-background {
+        margin-top: 0;
+        padding-top: 0;
+    }
+
+    .our-story-hero-content {
+        padding: 0 var(--spacing-6);
+    }
+
+    .our-story-hero-title {
+        font-size: 56px;
+        line-height: 68px;
+    }
+
+    /* About Section */
+    .our-story-about {
+        padding: var(--spacing-10) var(--spacing-6);
+    }
+
+    /* Vision & Philosophy Section */
+    .our-story-vision-philosophy {
+        padding: var(--spacing-7) var(--spacing-6);
+    }
+
+    .our-story-vision-philosophy-container {
+        flex-direction: column;
+        gap: var(--spacing-4);
+    }
+
+    /* Our Craft Section */
+    .our-story-craft {
+        padding: var(--spacing-10) var(--spacing-6);
+    }
+
+    .our-story-craft-items {
+        flex-direction: column;
+        gap: var(--spacing-6);
+    }
+
+    .our-story-craft-item {
+        flex-direction: row;
+    }
+
+    .our-story-craft-item-image {
+        width: 50%;
+        height: 248px;
+    }
+
+    .our-story-craft-item-content {
+        width: 50%;
+    }
+
+    /* Creative Spirit Section */
+    .our-story-creative-spirit {
+        padding: var(--spacing-10) var(--spacing-6);
+    }
+
+    /* Meet the Team Section - Optimized for Tablet */
+    .our-story-team {
+        padding: var(--spacing-10) var(--spacing-6);
+    }
+
+    .our-story-team-container {
+        gap: var(--spacing-9);
+    }
+
+    .our-story-team-header {
+        gap: var(--spacing-4);
+        max-width: 100%;
+    }
+
+    .our-story-team-title {
+        font-size: 36px;
+        line-height: 44px;
+    }
+
+    .our-story-team-subtitle {
+        font-size: 16px;
+        line-height: 24px;
+        max-width: 600px;
+    }
+
+    .our-story-team-members {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--spacing-7);
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .our-story-team-member {
+        flex: none;
+        width: 100%;
+        gap: var(--spacing-5);
+    }
+
+    .our-story-team-member-image {
+        width: 100%;
+        height: 260px;
+        border-radius: var(--radius-2);
+        overflow: hidden;
+    }
+
+    .our-story-team-member-info {
+        gap: var(--spacing-1);
+        padding: 0 var(--spacing-2);
+    }
+
+    .our-story-team-member-name {
+        font-size: 22px;
+        line-height: 32px;
+    }
+
+    .our-story-team-member-role {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    /* Contact CTA Section */
+    .our-story-contact-cta {
+        padding: var(--spacing-10) var(--spacing-6);
+    }
+
+    .our-story-contact-title {
+        font-size: 48px;
+        line-height: 60px;
+    }
+
+    .our-story-contact-info {
+        padding: var(--spacing-10) var(--spacing-6) 0;
+        flex-wrap: wrap;
+        gap: var(--spacing-7);
+        justify-content: center;
+    }
+}
+@media (min-width: 1176px) and (max-width: 1376px) {
+    .omo {
+        font-size: 24px;
+        line-height: 32px;
+    }
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    /* Remove any navbar padding that could cause gaps */
+    body.our-story-page .navbar {
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+    
+    /* Hero Section - Match navbar height exactly (100px) */
+    .our-story-hero {
+        height: auto;
+        min-height: 663px;
+        margin-top: 100px;
+        margin-bottom: 0;
+        padding: 0;
+        padding-top: 0;
+    }
+    
+    /* Ensure hero background has no spacing */
+    .our-story-hero-background {
+        margin-top: 0;
+        padding-top: 0;
+    }
+
+    .our-story-hero-content {
+        padding: 0 var(--spacing-6);
+        max-width: 345px;
+        top: 318px;
+    }
+
+    .our-story-hero-title {
+        font-size: 48px;
+        line-height: 56px;
+        letter-spacing: 0px;
+    }
+
+    .our-story-hero-description {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    /* About Section */
+    .our-story-about {
+        padding: var(--spacing-10) var(--spacing-6);
+    }
+
+    .our-story-about-container {
+        flex-direction: column;
+        gap: var(--spacing-10);
+    }
+
+    .our-story-about-title {
+        font-size: 36px;
+        line-height: 44px;
+        letter-spacing: 0px;
+    }
+
+    .our-story-about-text {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .our-story-about-image {
+        width: 100%;
+        height: 360px;
+    }
+
+    /* Vision & Philosophy Section */
+    .our-story-vision-philosophy {
+        padding: var(--spacing-7) var(--spacing-6);
+    }
+
+    .our-story-vision-philosophy-container {
+        flex-direction: column;
+        gap: var(--spacing-4);
+    }
+
+    /* Our Craft Section */
+    .our-story-craft {
+        padding: var(--spacing-10) var(--spacing-6);
+    }
+
+    .our-story-craft-header {
+        gap: var(--spacing-4);
+    }
+
+    .our-story-craft-title {
+        font-size: 40px;
+        line-height: 48px;
+    }
+
+    .our-story-craft-subtitle {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .our-story-craft-items {
+        flex-direction: column;
+        gap: var(--spacing-6);
+    }
+
+    .our-story-craft-item {
+        flex-direction: column;
+    }
+
+    .our-story-craft-item-image {
+        width: 100%;
+        height: 280px;
+    }
+
+    .our-story-craft-item-content {
+        width: 100%;
+        padding: var(--spacing-5);
+    }
+
+    .our-story-craft-item-icon {
+        width: 48px;
+        height: 48px;
+        border-radius: 72px;
+    }
+
+    .our-story-craft-item-icon img {
+        width: 16px;
+        height: 16px;
+    }
+
+    .our-story-craft-item-title {
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+    /* Creative Spirit Section */
+    .our-story-creative-spirit {
+        padding: var(--spacing-10) var(--spacing-6);
+    }
+
+    .our-story-creative-spirit-container {
+        flex-direction: column;
+        gap: var(--spacing-10);
+    }
+
+    .our-story-creative-spirit-title {
+        font-size: 40px;
+        line-height: 48px;
+    }
+
+    .our-story-creative-spirit-text {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .our-story-creative-spirit-images {
+        width: 100%;
+        height: 360px;
+    }
+
+    .our-story-creative-spirit-column {
+        gap: var(--spacing-4);
+    }
+
+    .our-story-creative-spirit-column:first-child {
+        padding-bottom: var(--spacing-6);
+    }
+
+    .our-story-creative-spirit-column:last-child {
+        padding-top: var(--spacing-6);
+    }
+
+    /* Meet the Team Section */
+    .our-story-team {
+        padding: var(--spacing-10) var(--spacing-6);
+    }
+
+    .our-story-team-header {
+        gap: var(--spacing-4);
+    }
+
+    .our-story-team-title {
+        font-size: 40px;
+        line-height: 48px;
+    }
+
+    .our-story-team-subtitle {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .our-story-team-members {
+        flex-direction: column;
+        gap: var(--spacing-6);
+    }
+
+    .our-story-team-member {
+        width: 100%;
+    }
+
+    /* Contact CTA Section */
+    .our-story-contact-cta {
+        padding: var(--spacing-10) var(--spacing-6);
+    }
+
+    .our-story-contact-header {
+        gap: var(--spacing-7);
+    }
+
+    .our-story-contact-title {
+        font-size: 36px;
+        line-height: 44px;
+        letter-spacing: 0px;
+    }
+
+    .our-story-contact-description {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .our-story-contact-button {
+        width: 100%;
+        padding: var(--spacing-6) var(--spacing-9);
+    }
+
+    .our-story-contact-info {
+        flex-direction: column;
+        gap: var(--spacing-13);
+        padding: var(--spacing-10) var(--spacing-6) 0;
+    }
+
+    .our-story-contact-item {
+        width: 100%;
+    }
+
+    .our-story-contact-icon {
+        width: 32px;
+        height: 32px;
+        border-radius: 48px;
+    }
+
+    .our-story-contact-icon img {
+        width: 12px;
+        height: 12px;
+    }
+}
+
+/* Small Mobile Styles */
+@media (max-width: 480px) {
+    /* Hero Section - Match navbar height exactly (100px) */
+    .our-story-hero {
+        margin-top: 100px;
+        margin-bottom: 0;
+        min-height: 500px;
+        padding-top: 0;
+    }
+    
+    /* Ensure hero background has no spacing */
+    .our-story-hero-background {
+        margin-top: 0;
+        padding-top: 0;
+    }
+
+    .our-story-hero-content {
+        top: 250px;
+    }
+
+    .our-story-hero-title {
+        font-size: 40px;
+        line-height: 48px;
+    }
+
+    .our-story-hero-description {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .our-story-about-title {
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+    .our-story-craft-title,
+    .our-story-creative-spirit-title,
+    .our-story-team-title {
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+    .our-story-contact-title {
+        font-size: 32px;
+        line-height: 40px;
+    }
+}
+

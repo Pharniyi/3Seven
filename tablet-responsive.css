@@ -1,0 +1,173 @@
+/* ============================================
+   TABLET/SMALL DESKTOP RESPONSIVE (1024px - 1439px)
+   Professional Left-Side Spacing Adjustments
+   ============================================ */
+
+@media (min-width: 1024px) and (max-width: 1439px) {
+
+    /* ===== HERO SECTION ===== */
+
+    /* Hero content container - ensure consistent left alignment */
+    .hero-content {
+        max-width: 100%;
+        padding-left: 64px;
+        padding-right: 64px;
+    }
+
+    /* Hero text - adjust left positioning for professional alignment */
+    .hero-text {
+        left: 25%;
+        max-width: 500px;
+    }
+
+    /* Hero title - responsive sizing */
+    .hero-title {
+        font-size: 56px;
+        line-height: 68px;
+    }
+
+    /* Hero description - maintain readability */
+    .hero-description {
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    /* Hero slider - adjust positioning */
+    .hero-slider {
+        left: calc(60% - 2px);
+        width: 500px;
+        height: 330px;
+    }
+
+    /* Slider items - scale proportionally */
+    .slider-item {
+        width: 156px;
+        height: 220px;
+    }
+
+    .slider-item.active {
+        width: 245px;
+        height: 330px;
+    }
+
+
+    /* ===== FEATURED WORKS SECTION ===== */
+
+    /* Featured works - consistent left padding */
+    .featured-works {
+        padding-left: 64px;
+        padding-right: 64px;
+    }
+
+    /* Gallery grid - professional alignment with consistent left spacing */
+    .gallery-grid {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 400px);
+        gap: 20px;
+        margin: 24px 0;
+        max-width: 100%;
+    }
+
+    /* Gallery items - responsive sizing */
+    .gallery-item {
+        width: 100%;
+        height: 100%;
+        max-width: 340px;
+        max-height: 400px;
+    }
+
+
+    /* ===== BRIDAL & FLORAL SECTIONS ===== */
+
+    /* Bridal-floral sections - uniform left padding */
+    .bridal-floral-sections {
+        padding-left: 64px;
+        padding-right: 64px;
+        gap: 20px;
+    }
+
+    /* Effect cards - responsive sizing with consistent spacing */
+    .effect-card {
+        width: calc(50% - 10px);
+        max-width: 500px;
+        height: 600px;
+    }
+
+    /* Effect overlay - adjust height */
+    .effect-overlay {
+        height: 600px;
+        transform: translateY(573px);
+    }
+
+
+    /* ===== STORIES SECTION ===== */
+
+    /* Stories section - consistent left padding */
+    .stories-section {
+        padding-left: 64px;
+        padding-right: 64px;
+    }
+
+    /* Stories header - maintain professional spacing */
+    .stories-header {
+        margin-bottom: var(--spacing-6);
+    }
+
+    /* Stories text - adjust max-width for better alignment */
+    .stories-text {
+        max-width: 550px;
+    }
+
+    /* Stories content - responsive gap */
+    .stories-content {
+        gap: var(--spacing-8);
+        flex-wrap: wrap;
+    }
+
+    /* Stories images - responsive sizing */
+    .stories-images {
+        width: 100%;
+        max-width: 600px;
+    }
+
+    /* Story featured - adjust sizing */
+    .story-featured {
+        flex: 1;
+        min-width: 350px;
+    }
+
+
+    /* ===== GENERAL SECTION ADJUSTMENTS ===== */
+
+    /* All sections - uniform left/right padding */
+    section {
+        padding-left: 64px;
+        padding-right: 64px;
+    }
+
+    /* Section headers - maintain center alignment with proper spacing */
+    .section-header {
+        max-width: 600px;
+    }
+
+    /* Section titles - responsive sizing */
+    .section-title {
+        font-size: 36px;
+        line-height: 44px;
+    }
+
+    /* Section descriptions - maintain readability */
+    .section-description {
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+
+    /* ===== NAVBAR ADJUSTMENTS ===== */
+
+    /* Navbar - consistent padding with sections */
+    .navbar {
+        padding-left: 64px;
+        padding-right: 64px;
+    }
+}

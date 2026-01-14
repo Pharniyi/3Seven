@@ -1,0 +1,582 @@
+/* ============================================
+   FLORAL STORIES PAGE - MODULAR CSS
+   ============================================ */
+
+/* Navbar styles are now in css/pages.css */
+
+/* Navbar Active State for Floral Stories */
+body.floral-stories-page .menu-link.active {
+    border-bottom: 2px solid var(--color-white);
+    color: var(--color-white);
+    padding-bottom: 2px;
+}
+
+/* Active state when navbar is not sticky (at top of page) */
+body.floral-stories-page .navbar:not(.sticky) .menu-link.active {
+    border-bottom: 2px solid var(--color-white);
+    color: var(--color-white);
+}
+
+/* Active state when navbar is sticky (scrolled) */
+body.floral-stories-page .navbar.sticky .menu-link.active {
+    border-bottom: 2px solid var(--color-white);
+    color: var(--color-white);
+}
+
+/* Ensure active state is visible on mobile when menu is shown */
+@media (max-width: 768px) {
+    body.floral-stories-page .navbar .navbar-menu-left .menu-link.active,
+    body.floral-stories-page .navbar .navbar-menu-right .menu-link.active {
+        border-bottom: 2px solid var(--color-white);
+        color: var(--color-white);
+    }
+}
+
+/* Hero Section */
+.floral-hero {
+    position: relative;
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    height: 654px;
+    overflow: hidden;
+    margin-top: 160px;
+}
+
+.floral-hero-background {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.floral-hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+}
+
+.floral-hero-overlay-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.floral-hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: 
+        linear-gradient(
+            to right,
+            rgba(226, 214, 176, 0.2) 0%,
+            rgba(226, 214, 176, 0.1) 25%,
+            rgba(226, 214, 176, 0.05) 40%,
+            transparent 60%,
+            rgba(64, 31, 40, 0.15) 100%
+        ),
+        linear-gradient(
+            to bottom,
+            transparent 0%,
+            rgba(255, 255, 255, 0.05) 50%,
+            rgba(64, 31, 40, 0.1) 100%
+        );
+    z-index: 2;
+}
+
+.floral-hero-content {
+    position: absolute;
+    left: 96px;
+    top: 346px;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-7);
+    max-width: 930px;
+    z-index: 3;
+}
+
+.floral-hero-text {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-2);
+}
+
+.floral-hero-title {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 88px;
+    letter-spacing: -1px;
+    color: var(--color-white);
+    text-shadow: 0 2px 8px rgba(226, 214, 176, 0.3), 0 1px 3px rgba(255, 255, 255, 0.5);
+}
+
+.floral-hero-description {
+    font-family: var(--font-body);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: var(--color-white);
+    text-shadow: 0 1px 4px rgba(226, 214, 176, 0.4), 0 1px 2px rgba(255, 255, 255, 0.6);
+}
+
+.floral-hero-button {
+    background-color: var(--color-white);
+    color: var(--color-primary);
+    padding: var(--spacing-4) var(--spacing-9);
+    border-radius: var(--radius-2);
+    font-family: var(--font-body);
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    border: none;
+    cursor: pointer;
+    transition: opacity 0.3s;
+    align-self: flex-start;
+}
+
+.floral-hero-button:hover {
+    opacity: 0.9;
+}
+
+/* Featured Works Section */
+.floral-featured-works {
+    padding: var(--spacing-10) var(--spacing-12);
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-9);
+    align-items: center;
+}
+
+.floral-featured-header {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-4);
+    align-items: center;
+    text-align: center;
+    max-width: 824px;
+}
+
+.floral-featured-title {
+    font-family: var(--font-heading);
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: -0.5px;
+    color: var(--color-primary);
+}
+
+.floral-featured-description {
+    font-family: var(--font-body);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: var(--color-neutral-300);
+}
+
+.floral-featured-grid {
+    display: flex;
+    gap: var(--spacing-6);
+    width: 100%;
+    justify-content: center;
+}
+
+.floral-featured-card {
+    flex: 1;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+.floral-featured-image {
+    width: 100%;
+    height: 248px;
+    overflow: hidden;
+}
+
+.floral-featured-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+}
+
+.floral-featured-content {
+    padding: var(--spacing-6) 0;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-6);
+}
+
+.floral-price-badge {
+    background-color: #f3eedb;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding-right: var(--spacing-3);
+    width: fit-content;
+}
+
+.floral-price-label {
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+    padding: var(--spacing-1) var(--spacing-6);
+    font-family: var(--font-body);
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.floral-price-value {
+    font-family: var(--font-body);
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    color: var(--color-black);
+    padding-right: 10px;
+}
+
+.floral-featured-text {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-4);
+}
+
+.floral-featured-card-title {
+    font-family: var(--font-body);
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    color: var(--color-primary);
+}
+
+.floral-featured-card-description {
+    font-family: var(--font-body);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #899197;
+}
+
+.floral-featured-button {
+    border: 1px solid var(--color-primary);
+    color: var(--color-primary);
+    background: transparent;
+    padding: var(--spacing-2) var(--spacing-6);
+    border-radius: var(--radius-2);
+    font-family: var(--font-body);
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    cursor: pointer;
+    transition: all 0.3s;
+    align-self: flex-start;
+}
+
+.floral-featured-button:hover {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+}
+
+/* Story Section */
+.floral-story-section {
+    background-color: #fbfaf4;
+    padding: var(--spacing-10) var(--spacing-12);
+    display: flex;
+    gap: var(--spacing-10);
+    align-items: center;
+}
+
+.floral-story-image {
+    width: 503px;
+    height: 503px;
+    flex-shrink: 0;
+}
+
+.floral-story-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+}
+
+.floral-story-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-6);
+}
+
+.floral-story-text {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-6);
+}
+
+.floral-story-title {
+    font-family: var(--font-heading);
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: -0.5px;
+    color: var(--color-primary);
+}
+
+.floral-story-description {
+    font-family: var(--font-body);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: var(--color-neutral-300);
+}
+
+.floral-story-quote {
+    background-color: #ece9ea;
+    border-left: 4px solid var(--color-primary);
+    padding: var(--spacing-2) var(--spacing-4);
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-1);
+}
+
+.floral-quote-text {
+    font-family: 'Lato', sans-serif;
+    font-style: italic;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--color-black);
+}
+
+.floral-quote-author {
+    font-family: var(--font-body);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: var(--color-primary);
+}
+
+.floral-story-button {
+    border: 1px solid var(--color-primary);
+    color: var(--color-primary);
+    background: transparent;
+    padding: var(--spacing-4) var(--spacing-9);
+    border-radius: var(--radius-2);
+    font-family: var(--font-body);
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    cursor: pointer;
+    transition: all 0.3s;
+    align-self: flex-start;
+}
+
+.floral-story-button:hover {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+}
+
+/* More Beautiful Creations Section */
+.floral-creations-section {
+    padding: var(--spacing-10) var(--spacing-12);
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-10);
+    align-items: center;
+}
+
+.floral-creations-header {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-6);
+    align-items: center;
+    text-align: center;
+    max-width: 794px;
+}
+
+.floral-creations-title {
+    font-family: var(--font-heading);
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: -0.5px;
+    color: var(--color-primary);
+}
+
+.floral-creations-description {
+    font-family: var(--font-body);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: var(--color-neutral-300);
+}
+
+.floral-creations-grid {
+    display: flex;
+    gap: var(--spacing-4);
+    height: 640px;
+    width: 100%;
+}
+
+.floral-creations-column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-4);
+}
+
+.floral-creations-column:first-child {
+    padding-bottom: var(--spacing-6);
+}
+
+.floral-creations-column:nth-child(2) {
+    padding-top: var(--spacing-6);
+}
+
+.floral-creations-column:last-child {
+    padding-bottom: var(--spacing-6);
+}
+
+.floral-creations-image {
+    flex: 1;
+    overflow: hidden;
+    position: relative;
+}
+
+.floral-creations-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+    position: absolute;
+    inset: 0;
+}
+
+.floral-creations-image img:first-child {
+    position: relative;
+    display: block;
+    z-index: 1;
+}
+
+.floral-creations-image-stacked {
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    mix-blend-mode: normal;
+}
+
+/* Contact CTA Section */
+.floral-contact-cta {
+    background-color: var(--color-light-bg);
+    padding: var(--spacing-10) var(--spacing-12);
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-10);
+    align-items: center;
+}
+
+.floral-contact-header {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-7);
+    align-items: center;
+    text-align: center;
+    max-width: 1036px;
+}
+
+.floral-contact-title {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 68px;
+    letter-spacing: -0.5px;
+    color: var(--color-primary);
+}
+
+.floral-contact-description {
+    font-family: var(--font-body);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: var(--color-black);
+}
+
+.floral-contact-button-primary {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    padding: var(--spacing-4) var(--spacing-9);
+    border-radius: var(--radius-2);
+    font-family: var(--font-body);
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    border: none;
+    cursor: pointer;
+    transition: opacity 0.3s;
+}
+
+.floral-contact-button-primary:hover {
+    opacity: 0.9;
+}
+
+.floral-contact-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: var(--spacing-10) var(--spacing-13) 0;
+    border-top: 1.735px solid #e0e0e0;
+}
+
+.floral-contact-item {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-6);
+    align-items: center;
+    text-align: center;
+}
+
+.floral-contact-icon {
+    width: 64px;
+    height: 64px;
+    background-color: var(--color-secondary);
+    border-radius: 96px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.floral-contact-icon img {
+    width: 24px;
+    height: 24px;
+}
+
+.floral-contact-details {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-1);
+}
+
+.floral-contact-label {
+    font-family: var(--font-body);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--color-neutral-500);
+}
+
+.floral-contact-value {
+    font-family: var(--font-body);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: var(--color-primary);
+}
+

@@ -1,0 +1,66 @@
+/* ============================================
+   PAGE-SPECIFIC NAVBAR STYLES
+   Consolidated styles for all pages with dark navbar
+   ============================================ */
+
+/* Navbar override for pages with dark background */
+body.bridal-artistry-page .navbar,
+body.floral-stories-page .navbar,
+body.showcase-page .navbar,
+body.our-story-page .navbar,
+body.contact-page .navbar {
+    background: #401F28 !important;
+    backdrop-filter: blur(10px);
+}
+
+body.bridal-artistry-page .navbar .menu-link,
+body.floral-stories-page .navbar .menu-link,
+body.showcase-page .navbar .menu-link,
+body.our-story-page .navbar .menu-link,
+body.contact-page .navbar .menu-link {
+    color: var(--color-secondary) !important;
+}
+
+body.bridal-artistry-page .navbar .logo-tagline,
+body.floral-stories-page .navbar .logo-tagline,
+body.showcase-page .navbar .logo-tagline,
+body.our-story-page .navbar .logo-tagline,
+body.contact-page .navbar .logo-tagline {
+    color: var(--color-secondary) !important;
+}
+
+body.bridal-artistry-page .navbar .navbar-button,
+body.floral-stories-page .navbar .navbar-button,
+body.showcase-page .navbar .navbar-button,
+body.our-story-page .navbar .navbar-button,
+body.contact-page .navbar .navbar-button {
+    background-color: var(--color-white) !important;
+    color: var(--color-primary) !important;
+}
+
+body.bridal-artistry-page .navbar .social-link img,
+body.floral-stories-page .navbar .social-link img,
+body.showcase-page .navbar .social-link img,
+body.our-story-page .navbar .social-link img,
+body.contact-page .navbar .social-link img {
+    filter: brightness(0) invert(1) !important;
+}
+
+/* Logo color - white on pages with dark navbar background (#401F28) */
+body.bridal-artistry-page .navbar .navbar-logo,
+body.floral-stories-page .navbar .navbar-logo,
+body.showcase-page .navbar .navbar-logo,
+body.our-story-page .navbar .navbar-logo,
+body.contact-page .navbar .navbar-logo {
+    filter: brightness(0) invert(1) !important;
+}
+
+/* Override sticky state for pages with dark navbar */
+body.bridal-artistry-page .navbar.sticky,
+body.floral-stories-page .navbar.sticky,
+body.showcase-page .navbar.sticky,
+body.our-story-page .navbar.sticky,
+body.contact-page .navbar.sticky {
+    background: #401F28 !important;
+}
+

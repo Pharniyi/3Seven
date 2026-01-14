@@ -1,0 +1,726 @@
+/* ============================================
+   BRIDAL ARTISTRY PAGE - MODULAR CSS
+   ============================================ */
+
+/* Navbar styles are now in css/pages.css */
+
+/* Navbar Active State */
+.menu-link.active {
+    border-bottom: 2px solid var(--color-white);
+    color: var(--color-white);
+    padding-bottom: 2px;
+}
+
+/* Active state when navbar is not sticky (at top of page) */
+.navbar:not(.sticky) .menu-link.active {
+    border-bottom: 2px solid var(--color-white);
+    color: var(--color-white);
+}
+
+/* Active state when navbar is sticky (scrolled) */
+.navbar.sticky .menu-link.active {
+    border-bottom: 2px solid var(--color-white);
+    color: var(--color-white);
+}
+
+/* Ensure active state is visible on mobile when menu is shown (if menu is toggled) */
+@media (max-width: 768px) {
+    .navbar .navbar-menu-left .menu-link.active,
+    .navbar .navbar-menu-right .menu-link.active {
+        border-bottom: 2px solid var(--color-white);
+        color: var(--color-white);
+    }
+}
+
+/* Hero Section */
+.bridal-hero {
+    position: relative;
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    height: 654px;
+    overflow: hidden;
+    margin-top: 160px;
+}
+
+.bridal-hero-background {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.bridal-hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+}
+
+.bridal-hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: 
+        linear-gradient(
+            to right,
+            rgba(226, 214, 176, 0.2) 0%,
+            rgba(226, 214, 176, 0.1) 25%,
+            rgba(226, 214, 176, 0.05) 40%,
+            transparent 60%,
+            rgba(64, 31, 40, 0.15) 100%
+        ),
+        linear-gradient(
+            to bottom,
+            transparent 0%,
+            rgba(255, 255, 255, 0.05) 50%,
+            rgba(64, 31, 40, 0.1) 100%
+        );
+    z-index: 1;
+}
+
+.bridal-hero-content {
+    position: absolute;
+    left: 96px;
+    top: 346px;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-7);
+    max-width: 919px;
+    z-index: 2;
+}
+
+.bridal-hero-text {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-2);
+}
+
+.bridal-hero-title {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 88px;
+    letter-spacing: -1px;
+    color: var(--color-primary);
+    text-shadow: 0 2px 8px rgba(226, 214, 176, 0.3), 0 1px 3px rgba(255, 255, 255, 0.5);
+}
+
+.bridal-hero-description {
+    font-family: var(--font-body);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: var(--color-black);
+    text-shadow: 0 1px 4px rgba(226, 214, 176, 0.4), 0 1px 2px rgba(255, 255, 255, 0.6);
+}
+
+.bridal-hero-button {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    padding: var(--spacing-4) var(--spacing-9);
+    border-radius: var(--radius-2);
+    font-family: var(--font-body);
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    border: none;
+    cursor: pointer;
+    transition: opacity 0.3s;
+    align-self: flex-start;
+}
+
+.bridal-hero-button:hover {
+    opacity: 0.9;
+}
+
+/* Featured Works Section */
+.bridal-featured-works {
+    padding: var(--spacing-10) var(--spacing-12);
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-9);
+    align-items: center;
+}
+
+.bridal-featured-header {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-4);
+    align-items: center;
+    text-align: center;
+    max-width: 824px;
+}
+
+.bridal-featured-title {
+    font-family: var(--font-heading);
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: -0.5px;
+    color: var(--color-primary);
+}
+
+.bridal-featured-description {
+    font-family: var(--font-body);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: var(--color-neutral-300);
+}
+
+.bridal-featured-description .not-italic {
+    font-style: normal;
+}
+
+.bridal-featured-grid {
+    display: flex;
+    gap: var(--spacing-6);
+    width: 100%;
+    justify-content: center;
+}
+
+.bridal-featured-card {
+    flex: 1;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+.bridal-featured-image {
+    width: 100%;
+    height: 248px;
+    overflow: hidden;
+}
+
+.bridal-featured-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+}
+
+.bridal-featured-content {
+    padding: var(--spacing-6) 0;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-6);
+}
+
+.bridal-price-badge {
+    background-color: #f3eedb;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding-right: var(--spacing-3);
+    width: fit-content;
+}
+
+.bridal-price-label {
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+    padding: var(--spacing-1) var(--spacing-6);
+    font-family: var(--font-body);
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.bridal-price-value {
+    font-family: var(--font-body);
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    color: var(--color-black);
+    padding-right: 10px;
+}
+
+.bridal-featured-text {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-4);
+}
+
+.bridal-featured-card-title {
+    font-family: var(--font-body);
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    color: var(--color-primary);
+}
+
+.bridal-featured-card-description {
+    font-family: var(--font-body);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #899197;
+}
+
+.bridal-featured-button {
+    border: 1px solid var(--color-primary);
+    color: var(--color-primary);
+    background: transparent;
+    padding: var(--spacing-2) var(--spacing-6);
+    border-radius: var(--radius-2);
+    font-family: var(--font-body);
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    cursor: pointer;
+    transition: all 0.3s;
+    align-self: flex-start;
+}
+
+.bridal-featured-button:hover {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+}
+
+/* Story Section */
+.bridal-story-section {
+    background-color: #fbfaf4;
+    padding: var(--spacing-10) var(--spacing-12);
+    display: flex;
+    gap: var(--spacing-10);
+    align-items: center;
+}
+
+.bridal-story-image {
+    width: 503px;
+    height: 503px;
+    flex-shrink: 0;
+}
+
+.bridal-story-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+}
+
+.bridal-story-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-6);
+}
+
+.bridal-story-text {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-6);
+}
+
+.bridal-story-title {
+    font-family: var(--font-heading);
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: -0.5px;
+    color: var(--color-primary);
+}
+
+.bridal-story-description {
+    font-family: var(--font-body);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: var(--color-neutral-300);
+}
+
+.bridal-story-quote {
+    background-color: #ece9ea;
+    border-left: 4px solid var(--color-primary);
+    padding: var(--spacing-2) var(--spacing-4);
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-1);
+}
+
+.bridal-quote-text {
+    font-family: 'Lato', sans-serif;
+    font-style: italic;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--color-black);
+}
+
+.bridal-quote-author {
+    font-family: var(--font-body);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: var(--color-primary);
+}
+
+.bridal-story-conclusion {
+    font-family: var(--font-body);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: var(--color-neutral-300);
+}
+
+.bridal-story-button {
+    border: 1px solid var(--color-primary);
+    color: var(--color-primary);
+    background: transparent;
+    padding: var(--spacing-4) var(--spacing-9);
+    border-radius: var(--radius-2);
+    font-family: var(--font-body);
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    cursor: pointer;
+    transition: all 0.3s;
+    align-self: flex-start;
+}
+
+.bridal-story-button:hover {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+}
+
+/* Details Section */
+.bridal-details-section {
+    padding: var(--spacing-10) var(--spacing-12);
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-10);
+    align-items: center;
+}
+
+.bridal-details-header {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-6);
+    align-items: center;
+    text-align: center;
+    max-width: 794px;
+}
+
+.bridal-details-title {
+    font-family: var(--font-heading);
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: -0.5px;
+    color: var(--color-primary);
+}
+
+.bridal-details-description {
+    font-family: var(--font-body);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: var(--color-neutral-300);
+}
+
+.bridal-details-grid {
+    display: flex;
+    gap: var(--spacing-4);
+    height: 640px;
+    width: 100%;
+}
+
+.bridal-details-column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-4);
+}
+
+.bridal-details-column:first-child {
+    padding-bottom: var(--spacing-6);
+}
+
+.bridal-details-column:nth-child(2) {
+    padding-top: var(--spacing-6);
+}
+
+.bridal-details-column:last-child {
+    padding-bottom: var(--spacing-6);
+}
+
+.bridal-details-image {
+    flex: 1;
+    overflow: hidden;
+    position: relative;
+}
+
+.bridal-details-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+}
+
+/* Layered Image Effect */
+.bridal-details-image-layered {
+    position: relative;
+}
+
+.bridal-details-image-overlay {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+}
+
+.bridal-details-image-overlay img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 50%;
+}
+
+/* Team Section */
+.bridal-team-section {
+    padding: var(--spacing-10) var(--spacing-12);
+    display: flex;
+    gap: var(--spacing-10);
+    align-items: center;
+    border-top: 1px solid #e0e0e0;
+}
+
+.bridal-team-image {
+    width: 529px;
+    height: 529px;
+    flex-shrink: 0;
+}
+
+.bridal-team-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+}
+
+.bridal-team-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-7);
+}
+
+.bridal-team-text {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-6);
+}
+
+.bridal-team-title {
+    font-family: var(--font-heading);
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: -0.5px;
+    color: var(--color-primary);
+}
+
+.bridal-team-description {
+    font-family: var(--font-body);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: var(--color-neutral-300);
+}
+
+.bridal-team-services {
+    border-top: 1.735px solid rgba(58, 54, 50, 0.02);
+    padding-top: var(--spacing-2);
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-2);
+}
+
+.bridal-services-title {
+    font-family: var(--font-body);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 32px;
+    color: #3a3632;
+}
+
+.bridal-services-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-6);
+}
+
+.bridal-services-list li {
+    font-family: var(--font-body);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--color-neutral-300);
+    position: relative;
+    padding-left: var(--spacing-6);
+}
+
+.bridal-services-list li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: var(--color-neutral-300);
+    font-size: 16px;
+}
+
+.bridal-team-button {
+    border: 1px solid var(--color-primary);
+    color: var(--color-primary);
+    background: transparent;
+    padding: var(--spacing-4) var(--spacing-9);
+    border-radius: var(--radius-2);
+    font-family: var(--font-body);
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    cursor: pointer;
+    transition: all 0.3s;
+    align-self: flex-start;
+}
+
+.bridal-team-button:hover {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+}
+
+/* Contact CTA Section */
+.bridal-contact-cta {
+    background-color: var(--color-light-bg);
+    padding: var(--spacing-10) var(--spacing-12);
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-10);
+    align-items: center;
+}
+
+.bridal-contact-header {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-7);
+    align-items: center;
+    text-align: center;
+    max-width: 1036px;
+}
+
+.bridal-contact-title {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 68px;
+    letter-spacing: -0.5px;
+    color: var(--color-primary);
+}
+
+.bridal-contact-description {
+    font-family: var(--font-body);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: var(--color-black);
+}
+
+.bridal-contact-buttons {
+    display: flex;
+    gap: var(--spacing-4);
+    align-items: center;
+    justify-content: center;
+}
+
+.bridal-contact-button-primary {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    padding: var(--spacing-4) var(--spacing-9);
+    border-radius: var(--radius-2);
+    font-family: var(--font-body);
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    border: none;
+    cursor: pointer;
+    transition: opacity 0.3s;
+}
+
+.bridal-contact-button-primary:hover {
+    opacity: 0.9;
+}
+
+.bridal-contact-button-secondary {
+    border: 1px solid var(--color-primary);
+    color: var(--color-black);
+    background: transparent;
+    padding: var(--spacing-4) var(--spacing-9);
+    border-radius: var(--radius-2);
+    font-family: var(--font-body);
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    cursor: pointer;
+    transition: all 0.3s;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+}
+
+.bridal-contact-button-secondary:hover {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+}
+
+.bridal-contact-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: var(--spacing-10) var(--spacing-13) 0;
+    border-top: 1.735px solid #e0e0e0;
+}
+
+.bridal-contact-item {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-6);
+    align-items: center;
+    text-align: center;
+}
+
+.bridal-contact-icon {
+    width: 64px;
+    height: 64px;
+    background-color: var(--color-secondary);
+    border-radius: 96px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bridal-contact-icon img {
+    width: 24px;
+    height: 24px;
+}
+
+.bridal-contact-details {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-1);
+}
+
+.bridal-contact-label {
+    font-family: var(--font-body);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--color-neutral-500);
+}
+
+.bridal-contact-value {
+    font-family: var(--font-body);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: var(--color-primary);
+}
+

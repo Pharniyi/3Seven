@@ -1,0 +1,220 @@
+/* ============================================
+   CONTACT US PAGE - RESPONSIVE CSS
+   ============================================ */
+
+/* Tablet Styles (769px - 1023px) */
+@media (min-width: 769px) and (max-width: 1023px) {
+    body.contact-page .navbar {
+        padding-bottom: 0;
+        margin-bottom: 0;
+        height: 180px !important;
+        padding-top: 32px !important;
+        padding-bottom: 32px !important;
+    }
+    
+    body.contact-page .navbar .navbar-logo-container {
+        width: 96px !important;
+        height: 96px !important;
+    }
+    
+    body.contact-page .navbar .navbar-logo {
+        width: 96px !important;
+        height: 96px !important;
+    }
+    
+    body.contact-page .navbar .logo-tagline {
+        top: 100px !important;
+        font-size: 11px !important;
+        line-height: 16px !important;
+    }
+
+    .contact-form-section {
+        margin-top: 140px;
+        padding: var(--spacing-10) var(--spacing-6);
+    }
+
+    .contact-form-container {
+        flex-direction: column;
+        gap: var(--spacing-7);
+    }
+
+    .contact-form-image {
+        width: 100%;
+        height: 400px;
+        min-height: 400px;
+    }
+    
+    .contact-form-image img {
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .contact-form-wrapper {
+        width: 100%;
+    }
+
+    .contact-form-fields {
+        width: 100%;
+    }
+
+    .contact-cta-section {
+        padding: var(--spacing-9) var(--spacing-6);
+    }
+
+    .contact-cta-container {
+        flex-direction: column;
+        gap: var(--spacing-10);
+        padding: 0;
+    }
+}
+
+/* Mobile Styles (max-width: 768px) */
+@media (max-width: 768px) {
+    body.contact-page .navbar {
+        padding-bottom: 0;
+        margin-bottom: 0;
+        height: 80px !important;
+        padding-top: 12px !important;
+        padding-bottom: 12px !important;
+    }
+    
+    body.contact-page .navbar .logo-tagline {
+        top: 58px !important;
+        font-size: 10px !important;
+        line-height: 14px !important;
+        color: #fdfcfb !important;
+    }
+
+    .contact-form-section {
+        margin-top: 62px;
+        padding: var(--spacing-7) var(--spacing-6);
+        border-top: 1px solid #e0e0e7;
+    }
+
+    .contact-form-container {
+        flex-direction: column;
+        gap: var(--spacing-7);
+    }
+
+    .contact-form-image {
+        width: 100%;
+        height: 360px;
+        min-height: 360px;
+        border-radius: 8px;
+    }
+    
+    .contact-form-image img {
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .contact-form-wrapper {
+        width: 100%;
+        gap: 36px;
+    }
+
+    .contact-form-header {
+        gap: var(--spacing-4, 12px);
+    }
+
+    .contact-form-title {
+        font-size: 40px;
+        line-height: 48px;
+    }
+
+    .contact-form-description {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .contact-form-fields {
+        width: 100%;
+        padding: var(--spacing-6);
+        gap: var(--spacing-6);
+        background: transparent;
+    }
+
+    .form-field-row {
+        flex-direction: column;
+        gap: var(--spacing-6);
+    }
+
+    .contact-form-fields input,
+    .contact-form-fields textarea {
+        border: 1px solid #bbbbcc;
+        border-radius: 8px;
+    }
+
+    .contact-submit-button {
+        width: 100%;
+        padding: var(--spacing-6) var(--spacing-9, 32px);
+    }
+
+    .contact-cta-section {
+        padding: var(--spacing-10) var(--spacing-6);
+    }
+
+    .contact-cta-container {
+        flex-direction: column;
+        gap: var(--spacing-13, 32px);
+        padding: var(--spacing-10) var(--spacing-13, 32px) 0;
+    }
+
+    .contact-cta-item {
+        gap: var(--spacing-6, 16px);
+    }
+
+    .contact-cta-icon {
+        width: 32px;
+        height: 32px;
+        border-radius: 48px;
+    }
+
+    .contact-cta-icon img {
+        width: 12px;
+        height: 12px;
+    }
+
+    .contact-cta-label {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .contact-cta-value {
+        font-size: 18px;
+        line-height: 28px;
+    }
+}
+
+/* 1024px Breakpoint - Match navbar height exactly (160px) */
+@media (min-width: 1024px) and (max-width: 1024px) {
+    body.contact-page .navbar {
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+
+    .contact-form-section {
+        margin-top: 160px;
+        margin-bottom: 0;
+        padding-top: var(--spacing-10);
+    }
+}
+
+/* Prevent image squeezing in 1024px to 1440px range */
+@media (min-width: 1024px) and (max-width: 1439px) {
+    .contact-form-image {
+        min-width: 0;
+        flex: 1 0 0;
+        max-width: 100%;
+    }
+    
+    .contact-form-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        aspect-ratio: auto;
+        min-height: 100%;
+    }
+}
+

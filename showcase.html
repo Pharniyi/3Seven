@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Showcase | 3Sevens || Bridal Artistry & Floral Design</title>
+    <link rel="icon" type="image/png" href="assets/logo-black.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="showcase-page">
+    <nav class="navbar">
+        <div class="navbar-social">
+            <a href="#" class="social-link"><img
+                    src="https://www.figma.com/api/mcp/asset/bb37f57a-9c0e-4b06-aa21-460817d7143a" alt="Twitter"></a>
+            <a href="#" class="social-link"><img
+                    src="https://www.figma.com/api/mcp/asset/e3d699ca-c169-4789-a6b0-00cb5bcc3393" alt="Facebook"></a>
+            <a href="#" class="social-link"><img
+                    src="https://www.figma.com/api/mcp/asset/14ed4d38-ce95-4dfc-a5a4-cb8206da6de4" alt="TikTok"></a>
+            <a href="#" class="social-link"><img
+                    src="https://www.figma.com/api/mcp/asset/a174a044-2382-4a06-8502-7ee4f6f73b06" alt="LinkedIn"></a>
+            <a href="#" class="social-link"><img
+                    src="https://www.figma.com/api/mcp/asset/9fb56d34-bdfc-4bf3-b65d-3bb712921436" alt="Instagram"></a>
+        </div>
+
+        <div class="navbar-center">
+            <div class="navbar-menu-left">
+                <a href="bridal-artistry.html" class="menu-link">Bridal Artistry</a>
+                <a href="floral-stories.html" class="menu-link">Floral Stories</a>
+            </div>
+            <div class="navbar-logo-container">
+                <a href="index.html">
+                    <img src="https://www.figma.com/api/mcp/asset/756e4751-5873-4e4e-959f-456d6c0f9775" alt="3Sevens Logo"
+                        class="navbar-logo">
+                </a>
+                <p class="logo-tagline">Since 2015</p>
+            </div>
+            <div class="navbar-menu-right">
+                <a href="showcase.html" class="menu-link active">Showcase</a>
+                <a href="our-story.html" class="menu-link">Our Story</a>
+            </div>
+        </div>
+
+        <a href="contact-us.html" class="navbar-button">Contact Us</a>
+        <button class="navbar-menu-button" id="mobile-menu-toggle" aria-label="Toggle mobile menu">
+            <img src="https://www.figma.com/api/mcp/asset/3d0b75cf-51fc-469c-a90b-603403595d0f" alt="Menu" class="hamburger-icon">
+            <img src="https://www.figma.com/api/mcp/asset/87ca4aac-f52f-4193-a848-b38331f1c1d4" alt="Close" class="close-icon">
+        </button>
+    </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay" id="mobile-menu-overlay">
+        <div class="mobile-menu-header">
+            <div class="mobile-menu-social">
+                <a href="#" class="social-link"><img
+                        src="https://www.figma.com/api/mcp/asset/e3d699ca-c169-4789-a6b0-00cb5bcc3393" alt="Facebook"></a>
+                <a href="#" class="social-link"><img
+                        src="https://www.figma.com/api/mcp/asset/14ed4d38-ce95-4dfc-a5a4-cb8206da6de4" alt="TikTok"></a>
+                <a href="#" class="social-link"><img
+                        src="https://www.figma.com/api/mcp/asset/9fb56d34-bdfc-4bf3-b65d-3bb712921436" alt="Instagram"></a>
+            </div>
+            <button class="mobile-menu-close" id="mobile-menu-close" aria-label="Close mobile menu">
+                <img src="https://www.figma.com/api/mcp/asset/87ca4aac-f52f-4193-a848-b38331f1c1d4" alt="Close">
+            </button>
+        </div>
+        <div class="mobile-menu-logo">
+            <a href="index.html">
+                <img src="https://www.figma.com/api/mcp/asset/0769aa01-f6a8-45d8-ba82-aa292a6bd9c1" alt="3Sevens Logo">
+            </a>
+            <p class="mobile-menu-tagline">Since 2015</p>
+        </div>
+        <nav class="mobile-menu-nav">
+            <a href="bridal-artistry.html" class="mobile-menu-link">Bridal Artistry</a>
+            <a href="floral-stories.html" class="mobile-menu-link">Floral Stories</a>
+            <a href="showcase.html" class="mobile-menu-link">Showcase</a>
+            <a href="our-story.html" class="mobile-menu-link">Our Story</a>
+        </nav>
+        <div class="mobile-menu-cta">
+            <a href="contact-us.html" class="mobile-menu-button">Contact Us</a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="showcase-hero">
+        <div class="showcase-hero-content">
+            <h1 class="showcase-hero-title">Our Showcase</h1>
+            <p class="showcase-hero-description">A visual journey through our most cherished creations — where bridal artistry meets floral perfection. Each image tells a story of love, elegance, and meticulous craftsmanship.</p>
+        </div>
+    </section>
+
+    <!-- Filter Section (Sticky) -->
+    <section class="showcase-filters">
+        <div class="showcase-filters-container">
+            <button class="filter-button active" data-filter="all">
+                <span>All Work</span>
+                <span class="filter-count">(12)</span>
+            </button>
+            <button class="filter-button" data-filter="bridal">
+                <span>Bridal Artistry</span>
+                <span class="filter-count">(12)</span>
+            </button>
+            <button class="filter-button" data-filter="floral">
+                <span>Floral Design</span>
+                <span class="filter-count">(12)</span>
+            </button>
+            <button class="filter-button" data-filter="event">
+                <span>Event Styling</span>
+                <span class="filter-count">(12)</span>
+            </button>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="showcase-gallery">
+        <div class="showcase-gallery-container">
+            <!-- Column 1 (5 images) -->
+            <div class="gallery-column">
+                <div class="showcase-gallery-item">
+                    <img src="https://www.figma.com/api/mcp/asset/bd3813dd-6308-4fed-a102-44da177706b2" alt="Red Tulips Bouquet">
+                </div>
+                <div class="showcase-gallery-item">
+                    <img src="https://www.figma.com/api/mcp/asset/a194a510-25cc-42ed-8174-abcaa81acabe" alt="Bride Portrait">
+                </div>
+                <div class="showcase-gallery-item">
+                    <img src="https://www.figma.com/api/mcp/asset/6d3d4220-08e1-49f6-8c88-08d35b3c0fef" alt="Pink Roses Bouquet">
+                </div>
+                <div class="showcase-gallery-item">
+                    <img src="https://www.figma.com/api/mcp/asset/028741ed-c91b-40fc-a220-272727a234d4" alt="Bride in Field">
+                </div>
+                <div class="showcase-gallery-item">
+                    <img src="https://www.figma.com/api/mcp/asset/f171f52c-5df8-4683-bf8e-1601c684fef0" alt="Bride at Mirror">
+                </div>
+            </div>
+            <!-- Column 2 (5 images) -->
+            <div class="gallery-column">
+                <div class="showcase-gallery-item">
+                    <img src="https://www.figma.com/api/mcp/asset/903b2d20-4255-4eb1-9d4c-633574b9ab81" alt="Pink and White Bouquet">
+                </div>
+                <div class="showcase-gallery-item">
+                    <img src="https://www.figma.com/api/mcp/asset/cc550b98-d228-4d11-8eb4-91092f088db0" alt="Full Body Bride">
+                </div>
+                <div class="showcase-gallery-item">
+                    <img src="https://www.figma.com/api/mcp/asset/f7f60f74-d731-4a91-80c2-0b1b49eec20b" alt="Bride with Veil">
+                </div>
+                <div class="showcase-gallery-item">
+                    <img src="https://www.figma.com/api/mcp/asset/ce53a8b8-ac51-4925-baf6-84b0bf460f5f" alt="Pink Roses Bouquet Large">
+                </div>
+                <div class="showcase-gallery-item">
+                    <img src="https://www.figma.com/api/mcp/asset/db66945b-8980-4aed-96ab-2c6de9b08c42" alt="Woman with Headwrap">
+                </div>
+            </div>
+            <!-- Column 3 (5 images) -->
+            <div class="gallery-column">
+                <div class="showcase-gallery-item">
+                    <img src="https://www.figma.com/api/mcp/asset/454123bf-ac43-4a10-aa45-0a8f496eb8d1" alt="White Peonies">
+                </div>
+                <div class="showcase-gallery-item">
+                    <img src="https://www.figma.com/api/mcp/asset/31ec146f-2ad5-499f-bae1-a04583209257" alt="Pink Roses Flat Lay">
+                </div>
+                <div class="showcase-gallery-item">
+                    <img src="https://www.figma.com/api/mcp/asset/30364847-e910-4bd2-9745-563eb9f4bea7" alt="Bride in Ball Gown">
+                </div>
+                <div class="showcase-gallery-item">
+                    <img src="https://www.figma.com/api/mcp/asset/826c2091-0364-40bf-9760-5dc51dacd3dc" alt="White Tulips Bouquet">
+                </div>
+                <div class="showcase-gallery-item">
+                    <img src="https://www.figma.com/api/mcp/asset/af726555-c2e7-4720-9632-d1d58dda64d4" alt="Bride with White Tulips">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact CTA Section -->
+    <section class="showcase-contact-cta">
+        <div class="showcase-contact-header">
+            <div class="section-divider"></div>
+            <h2 class="showcase-contact-title">Let's Create Something Beautiful Together</h2>
+            <p class="showcase-contact-description">Whether you're a bride, a creative, or simply someone who loves beauty — we'd love to tell your story.</p>
+            <button class="showcase-contact-button">Start Your Journey With Us</button>
+        </div>
+        <div class="showcase-contact-info">
+            <div class="showcase-contact-item">
+                <div class="showcase-contact-icon">
+                    <img src="https://www.figma.com/api/mcp/asset/a767d808-f5bd-40d9-96f5-b6ae341c349b" alt="Email">
+                </div>
+                <div class="showcase-contact-details">
+                    <p class="showcase-contact-label">Email Us</p>
+                    <p class="showcase-contact-value">hello@3Sevens.ng</p>
+                </div>
+            </div>
+            <div class="showcase-contact-item">
+                <div class="showcase-contact-icon">
+                    <img src="https://www.figma.com/api/mcp/asset/ef92da77-9a65-40fd-ab42-9f3d5b325394" alt="Phone">
+                </div>
+                <div class="showcase-contact-details">
+                    <p class="showcase-contact-label">Call Us</p>
+                    <p class="showcase-contact-value">+234 (0) 000 0000</p>
+                </div>
+            </div>
+            <div class="showcase-contact-item">
+                <div class="showcase-contact-icon">
+                    <img src="https://www.figma.com/api/mcp/asset/c231ead4-a022-45d8-bccc-8d02a96a442a" alt="Location">
+                </div>
+                <div class="showcase-contact-details">
+                    <p class="showcase-contact-label">Visit Us</p>
+                    <p class="showcase-contact-value">Lagos, Nigeria</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <img src="https://www.figma.com/api/mcp/asset/b9c0ec5e-509c-49c6-9011-1385c95dbf39" alt="3Sevens Logo"
+                    class="footer-logo">
+                <p class="footer-tagline">The Art of Bridal & Floral Expression</p>
+                <p class="footer-description">Celebrating love and individuality through timeless bridal artistry and
+                    floral storytelling in Nigeria and beyond.</p>
+            </div>
+
+            <div class="footer-links">
+                <h4 class="footer-heading">Explore</h4>
+                <ul class="footer-list">
+                    <li><a href="our-story.html">Our Story</a></li>
+                    <li><a href="bridal-artistry.html">Bridal Artistry</a></li>
+                    <li><a href="floral-stories.html">Floral Stories</a></li>
+                    <li><a href="showcase.html">Showcase</a></li>
+                    <li><a href="contact-us.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-social">
+                <h4 class="footer-heading">Follow Us</h4>
+                <div class="footer-social-icons">
+                    <a href="#" class="social-icon-circle"><img
+                            src="https://www.figma.com/api/mcp/asset/fd04241f-6007-4c87-80bc-b095e6fd80bd"
+                            alt="Instagram"></a>
+                    <a href="#" class="social-icon-circle"><img
+                            src="https://www.figma.com/api/mcp/asset/2cd08c2a-05f4-4a5c-910e-12e483f604da"
+                            alt="Facebook"></a>
+                    <a href="#" class="social-icon-circle"><img
+                            src="https://www.figma.com/api/mcp/asset/226b268f-60ae-4f72-a0e6-b2b27ce5fc0a"
+                            alt="Twitter"></a>
+                    <a href="#" class="social-icon-circle"><img
+                            src="https://www.figma.com/api/mcp/asset/c90bc286-a6c1-40c8-9853-66ae5a365542"
+                            alt="TikTok"></a>
+                    <a href="#" class="social-icon-circle"><img
+                            src="https://www.figma.com/api/mcp/asset/6dc0812c-f681-42d8-903f-75c70b432157"
+                            alt="LinkedIn"></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p class="footer-copyright">© 2025 3Sevens. All rights reserved.</p>
+            <div class="footer-legal">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
+

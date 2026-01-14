@@ -1,0 +1,479 @@
+/* ============================================
+   BRIDAL ARTISTRY PAGE - RESPONSIVE CSS
+   ============================================ */
+
+/* Tablet/Small Desktop (1024px - 1439px) */
+@media (min-width: 1024px) and (max-width: 1439px) {
+    .bridal-hero {
+        height: 600px;
+    }
+
+    .bridal-hero-content {
+        left: 64px;
+        top: 300px;
+        max-width: 800px;
+    }
+
+    .bridal-hero-title {
+        font-size: 56px;
+        line-height: 68px;
+    }
+
+    .bridal-featured-works {
+        padding: var(--spacing-10) 64px;
+    }
+
+    .bridal-featured-grid {
+        gap: var(--spacing-5);
+    }
+
+    .bridal-featured-card {
+        max-width: 340px;
+    }
+
+    .bridal-featured-image {
+        height: 220px;
+    }
+
+    .bridal-story-section {
+        padding: var(--spacing-10) 64px;
+        gap: var(--spacing-8);
+    }
+
+    .bridal-story-image {
+        width: 450px;
+    }
+
+    .bridal-details-section {
+        padding: var(--spacing-10) 64px;
+    }
+
+    .bridal-details-grid {
+        height: 600px;
+    }
+
+    .bridal-team-section {
+        padding: var(--spacing-10) 64px;
+        gap: var(--spacing-8);
+    }
+
+    .bridal-team-image {
+        width: 450px;
+    }
+
+    .bridal-contact-cta {
+        padding: var(--spacing-10) 64px;
+    }
+
+    .bridal-contact-title {
+        font-size: 48px;
+        line-height: 60px;
+    }
+
+    .bridal-contact-info {
+        padding: var(--spacing-10) 96px 0;
+    }
+}
+
+/* Tablet Landscape (769px - 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    /* Story Section - Column Layout */
+    .bridal-story-section {
+        flex-direction: column;
+        padding: var(--spacing-10) 48px;
+        gap: 0;
+        align-items: stretch;
+    }
+
+    .bridal-story-image {
+        width: 100%;
+        height: auto;
+        max-height: 400px;
+        min-height: 300px;
+        flex-shrink: 0;
+        margin-bottom: var(--spacing-10);
+        overflow: hidden;
+        position: relative;
+    }
+
+    .bridal-story-image img {
+        width: 100%;
+        height: 100%;
+        max-height: 400px;
+        object-fit: cover;
+        object-position: center center;
+        display: block;
+    }
+
+    .bridal-story-content {
+        width: 100%;
+        flex: 0 0 auto;
+        margin-top: 0;
+        padding-top: 0;
+    }
+
+    /* Team Section - Column Layout */
+    .bridal-team-section {
+        flex-direction: column;
+        padding: var(--spacing-10) 48px;
+        gap: 0;
+        align-items: stretch;
+    }
+
+    .bridal-team-image {
+        width: 100%;
+        height: auto;
+        max-height: 400px;
+        min-height: 300px;
+        flex-shrink: 0;
+        margin-bottom: var(--spacing-10);
+        overflow: hidden;
+        position: relative;
+    }
+
+    .bridal-team-image img {
+        width: 100%;
+        height: 100%;
+        max-height: 400px;
+        object-fit: cover;
+        object-position: center center;
+        display: block;
+    }
+
+    .bridal-team-content {
+        width: 100%;
+        flex: 0 0 auto;
+        margin-top: 0;
+        padding-top: 0;
+    }
+
+    /* Hero adjustments */
+    .bridal-hero {
+        height: 600px;
+        margin-top: 0;
+    }
+
+    .bridal-hero-content {
+        left: 48px;
+        top: 300px;
+        max-width: 700px;
+    }
+
+    .bridal-hero-title {
+        font-size: 56px;
+        line-height: 68px;
+    }
+
+    /* Featured works adjustments */
+    .bridal-featured-works {
+        padding: var(--spacing-10) 48px;
+    }
+
+    .bridal-featured-grid {
+        gap: var(--spacing-5);
+    }
+
+    .bridal-featured-card {
+        max-width: 32%;
+    }
+
+    .bridal-featured-image {
+        height: 220px;
+    }
+
+    /* Details section adjustments */
+    .bridal-details-section {
+        padding: var(--spacing-10) 48px;
+    }
+
+    .bridal-details-grid {
+        height: 550px;
+    }
+
+    /* Contact section adjustments */
+    .bridal-contact-cta {
+        padding: var(--spacing-10) 48px;
+    }
+}
+
+/* Mobile (max-width: 768px) */
+@media (max-width: 768px) {
+    /* Hero Section */
+    .bridal-hero {
+        height: 663px;
+        margin-top: 100px;
+    }
+
+    .bridal-hero-content {
+        left: 50%;
+        top: 279px;
+        transform: translateX(-50%);
+        width: calc(100% - 48px);
+        max-width: 345px;
+        align-items: center;
+        text-align: center;
+    }
+
+    .bridal-hero-title {
+        font-size: 48px;
+        line-height: 56px;
+        text-align: center;
+    }
+
+    .bridal-hero-description {
+        text-align: center;
+    }
+
+    .bridal-hero-button {
+        width: 100%;
+    }
+
+    /* Featured Works */
+    .bridal-featured-works {
+        padding: var(--spacing-10) 24px;
+        gap: var(--spacing-9);
+    }
+
+    .bridal-featured-header {
+        max-width: 100%;
+    }
+
+    .bridal-featured-title {
+        font-size: 40px;
+        line-height: 48px;
+    }
+
+    .bridal-featured-grid {
+        flex-direction: column;
+        gap: var(--spacing-6);
+    }
+
+    .bridal-featured-card {
+        max-width: 100%;
+    }
+
+    .bridal-featured-image {
+        height: 240px;
+    }
+
+    .bridal-price-badge {
+        gap: 10px;
+        padding-right: var(--spacing-3);
+    }
+
+    .bridal-price-label {
+        padding: var(--spacing-1) var(--spacing-4);
+        font-size: 14px;
+    }
+
+    .bridal-price-value {
+        font-size: 14px;
+    }
+
+    .bridal-featured-button {
+        width: 100%;
+    }
+
+    /* Story Section */
+    .bridal-story-section {
+        padding: var(--spacing-10) 24px;
+        flex-direction: column;
+        gap: var(--spacing-10);
+        border-top: 1px solid #e0e0e0;
+    }
+
+    .bridal-story-image {
+        width: 100%;
+        height: 360px;
+    }
+
+    .bridal-story-content {
+        width: 100%;
+    }
+
+    .bridal-story-title {
+        font-size: 40px;
+        line-height: 48px;
+    }
+
+    .bridal-story-quote {
+        padding: var(--spacing-2) var(--spacing-3);
+    }
+
+    .bridal-story-button {
+        width: 100%;
+    }
+
+    /* Details Section */
+    .bridal-details-section {
+        padding: var(--spacing-10) 24px;
+        gap: var(--spacing-10);
+    }
+
+    .bridal-details-header {
+        max-width: 100%;
+    }
+
+    .bridal-details-title {
+        font-size: 40px;
+        line-height: 48px;
+    }
+
+    .bridal-details-grid {
+        flex-direction: column;
+        height: auto;
+        gap: var(--spacing-3);
+    }
+
+    .bridal-details-column {
+        flex-direction: row;
+        gap: var(--spacing-3);
+        padding: 0 !important;
+    }
+
+    .bridal-details-column:first-child {
+        padding-bottom: 0 !important;
+    }
+
+    .bridal-details-column:nth-child(2) {
+        padding-top: 0 !important;
+    }
+
+    .bridal-details-column:last-child {
+        padding-bottom: 0 !important;
+    }
+
+    .bridal-details-image {
+        flex: 1;
+        height: 150px;
+    }
+
+    /* Team Section */
+    .bridal-team-section {
+        padding: var(--spacing-10) 24px;
+        flex-direction: column;
+        gap: var(--spacing-10);
+        border-top: 1px solid #e0e0e0;
+    }
+
+    .bridal-team-image {
+        width: 100%;
+        height: 360px;
+    }
+
+    .bridal-team-content {
+        width: 100%;
+    }
+
+    .bridal-team-title {
+        font-size: 40px;
+        line-height: 48px;
+    }
+
+    .bridal-services-list {
+        flex-direction: column;
+        gap: var(--spacing-2);
+    }
+
+    .bridal-team-button {
+        width: 100%;
+    }
+
+    /* Contact CTA */
+    .bridal-contact-cta {
+        padding: var(--spacing-10) 24px;
+        gap: var(--spacing-10);
+    }
+
+    .bridal-contact-header {
+        max-width: 100%;
+        gap: var(--spacing-7);
+    }
+
+    .bridal-contact-title {
+        font-size: 36px;
+        line-height: 44px;
+    }
+
+    .bridal-contact-description {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .bridal-contact-buttons {
+        flex-direction: column;
+        width: 100%;
+        gap: var(--spacing-4);
+    }
+
+    .bridal-contact-button-primary,
+    .bridal-contact-button-secondary {
+        width: 100%;
+        padding: var(--spacing-6) var(--spacing-9);
+    }
+
+    .bridal-contact-info {
+        flex-direction: column;
+        gap: var(--spacing-13);
+        padding: var(--spacing-10) 32px 0;
+    }
+
+    .bridal-contact-item {
+        width: 100%;
+    }
+
+    .bridal-contact-icon {
+        width: 32px;
+        height: 32px;
+    }
+
+    .bridal-contact-icon img {
+        width: 12px;
+        height: 12px;
+    }
+
+    .bridal-contact-label {
+        font-size: 16px;
+    }
+
+    .bridal-contact-value {
+        font-size: 18px;
+    }
+}
+
+/* Small Mobile (max-width: 480px) */
+@media (max-width: 480px) {
+    .bridal-hero {
+        height: 500px;
+        margin-top: 120px;
+    }
+
+    .bridal-hero-content {
+        width: calc(100% - 48px);
+        top: 200px;
+    }
+
+    .bridal-hero-title {
+        font-size: 36px;
+        line-height: 44px;
+    }
+
+    .bridal-hero-description {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .bridal-featured-title,
+    .bridal-story-title,
+    .bridal-details-title,
+    .bridal-team-title {
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+    .bridal-contact-title {
+        font-size: 28px;
+        line-height: 36px;
+    }
+}
+

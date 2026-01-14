@@ -1,0 +1,631 @@
+/* ============================================
+   OUR STORY PAGE - MODULAR CSS
+   ============================================ */
+
+/* Navbar styles are now in css/pages.css */
+
+/* Navbar Active State for Our Story */
+body.our-story-page .menu-link.active {
+    border-bottom: 2px solid var(--color-white);
+    color: var(--color-white);
+    padding-bottom: 2px;
+}
+
+/* Active state when navbar is not sticky (at top of page) */
+body.our-story-page .navbar:not(.sticky) .menu-link.active {
+    border-bottom: 2px solid var(--color-white);
+    color: var(--color-white);
+}
+
+/* Active state when navbar is sticky (scrolled) */
+body.our-story-page .navbar.sticky .menu-link.active {
+    border-bottom: 2px solid var(--color-white);
+    color: var(--color-white);
+}
+
+/* Ensure active state is visible on mobile when menu is shown */
+@media (max-width: 768px) {
+    body.our-story-page .navbar .navbar-menu-left .menu-link.active,
+    body.our-story-page .navbar .navbar-menu-right .menu-link.active {
+        border-bottom: 2px solid var(--color-white);
+        color: var(--color-white);
+    }
+}
+
+/* Hero Section */
+.our-story-hero {
+    position: relative;
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    height: 654px;
+    margin-top: 160px;
+    overflow: hidden;
+}
+
+.our-story-hero-background {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.our-story-hero-image {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    z-index: 1;
+}
+
+.our-story-hero-overlay-image {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    z-index: 2;
+}
+
+.our-story-hero-gradient {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(64, 31, 40, 0) 0%, rgba(64, 31, 40, 1) 100%);
+    z-index: 3;
+}
+
+.our-story-hero-content {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 4;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-2);
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    max-width: 899px;
+    padding: 0 var(--spacing-12);
+}
+
+.our-story-hero-title {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 88px;
+    letter-spacing: -1px;
+    color: var(--color-secondary);
+    margin: 0;
+}
+
+.our-story-hero-description {
+    font-family: var(--font-body);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: var(--color-white);
+    margin: 0;
+}
+
+/* About Section */
+.our-story-about {
+    padding: var(--spacing-10) var(--spacing-12);
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.our-story-about-container {
+    display: flex;
+    gap: var(--spacing-10);
+    align-items: center;
+}
+
+.our-story-about-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-6);
+}
+
+.our-story-about-title {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 68px;
+    letter-spacing: -0.5px;
+    color: var(--color-primary);
+    margin: 0;
+}
+
+.our-story-about-text {
+    font-family: var(--font-body);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: var(--color-neutral-300);
+    margin: 0;
+}
+
+.our-story-about-image {
+    position: relative;
+    width: 503px;
+    height: 503px;
+    flex-shrink: 0;
+}
+
+.our-story-about-image img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.our-story-about-image img:first-child {
+    z-index: 1;
+}
+
+.our-story-about-image img:last-child {
+    z-index: 2;
+}
+
+/* Vision & Philosophy Section */
+.our-story-vision-philosophy {
+    background-color: var(--color-light-bg);
+    padding: var(--spacing-7) var(--spacing-12);
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.our-story-vision-philosophy-container {
+    display: flex;
+    gap: var(--spacing-6);
+}
+
+.our-story-vision-card,
+.our-story-philosophy-card {
+    flex: 1;
+    border: 0.4px solid var(--color-primary);
+    border-radius: var(--radius-3);
+    padding: var(--spacing-6);
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-2);
+}
+
+.our-story-vision-title,
+.our-story-philosophy-title {
+    font-family: var(--font-body);
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    color: var(--color-primary);
+    margin: 0;
+}
+
+.our-story-vision-text,
+.our-story-philosophy-text {
+    font-family: var(--font-body);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: var(--color-black);
+    margin: 0;
+}
+
+/* Our Craft Section */
+.our-story-craft {
+    padding: var(--spacing-10) var(--spacing-12);
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.our-story-craft-container {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-9);
+    align-items: center;
+}
+
+.our-story-craft-header {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-4);
+    align-items: center;
+    text-align: center;
+}
+
+.our-story-craft-title {
+    font-family: var(--font-heading);
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: -0.5px;
+    color: var(--color-primary);
+    margin: 0;
+}
+
+.our-story-craft-subtitle {
+    font-family: var(--font-body);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: var(--color-black);
+    margin: 0;
+}
+
+.our-story-craft-items {
+    display: flex;
+    gap: 3px;
+    width: 100%;
+}
+
+.our-story-craft-item {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.our-story-craft-item-image {
+    position: relative;
+    width: 100%;
+    height: 248px;
+    overflow: hidden;
+}
+
+.our-story-craft-item-image img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.our-story-craft-item-content {
+    padding: var(--spacing-7);
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-4);
+}
+
+.our-story-craft-item-icon {
+    width: 64px;
+    height: 64px;
+    background-color: var(--color-secondary);
+    border-radius: 96px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.our-story-craft-item-icon img {
+    width: 24px;
+    height: 24px;
+    position: relative;
+}
+
+.our-story-craft-item-title {
+    font-family: var(--font-heading);
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 40px;
+    color: var(--color-primary);
+    margin: 0;
+}
+
+.our-story-craft-item-text {
+    font-family: var(--font-body);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--color-neutral-400);
+    margin: 0;
+}
+
+/* Creative Spirit Section */
+.our-story-creative-spirit {
+    border-top: 1px solid #e0e0e0;
+    border-bottom: 1px solid #e0e0e0;
+    padding: var(--spacing-10) var(--spacing-12);
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.our-story-creative-spirit-container {
+    display: flex;
+    gap: var(--spacing-10);
+    align-items: center;
+}
+
+.our-story-creative-spirit-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-6);
+}
+
+.our-story-creative-spirit-title {
+    font-family: var(--font-heading);
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: -0.5px;
+    color: var(--color-primary);
+    margin: 0;
+}
+
+.our-story-creative-spirit-text {
+    font-family: var(--font-body);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: var(--color-neutral-300);
+    margin: 0;
+}
+
+.our-story-creative-spirit-text strong {
+    font-weight: 400;
+}
+
+.our-story-creative-spirit-text em {
+    font-style: normal;
+}
+
+.our-story-creative-spirit-images {
+    display: flex;
+    gap: var(--spacing-4);
+    width: 608px;
+    height: 608px;
+    flex-shrink: 0;
+}
+
+.our-story-creative-spirit-column {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-4);
+    flex: 1;
+}
+
+.our-story-creative-spirit-column:first-child {
+    padding-bottom: var(--spacing-6);
+}
+
+.our-story-creative-spirit-column:last-child {
+    padding-top: var(--spacing-6);
+}
+
+.our-story-creative-spirit-image {
+    position: relative;
+    flex: 1;
+    width: 100%;
+    overflow: hidden;
+}
+
+.our-story-creative-spirit-image img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* Meet the Team Section */
+.our-story-team {
+    padding: var(--spacing-10) var(--spacing-12);
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.our-story-team-container {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-9);
+    align-items: center;
+}
+
+.our-story-team-header {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-4);
+    align-items: center;
+    text-align: center;
+}
+
+.our-story-team-title {
+    font-family: var(--font-heading);
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: -0.5px;
+    color: var(--color-primary);
+    margin: 0;
+}
+
+.our-story-team-subtitle {
+    font-family: var(--font-body);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: var(--color-neutral-300);
+    margin: 0;
+}
+
+.our-story-team-members {
+    display: flex;
+    gap: var(--spacing-6);
+    width: 100%;
+}
+
+.our-story-team-member {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-6);
+}
+
+.our-story-team-member-image {
+    width: 100%;
+    height: 280px;
+    overflow: hidden;
+}
+
+.our-story-team-member-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.our-story-team-member-info {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-1);
+    align-items: center;
+    text-align: center;
+}
+
+.our-story-team-member-name {
+    font-family: var(--font-body);
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    color: var(--color-black);
+    margin: 0;
+}
+
+.our-story-team-member-role {
+    font-family: var(--font-body);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: #cec3a0;
+    margin: 0;
+}
+
+/* Contact CTA Section */
+.our-story-contact-cta {
+    background-color: var(--color-light-bg);
+    padding: var(--spacing-10) var(--spacing-12);
+    max-width: 1440px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.our-story-contact-cta-container {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-10);
+    align-items: center;
+}
+
+.our-story-contact-header {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-7);
+    align-items: center;
+    text-align: center;
+    max-width: 1036px;
+}
+
+.our-story-contact-title {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 68px;
+    letter-spacing: -0.5px;
+    color: var(--color-primary);
+    margin: 0;
+}
+
+.our-story-contact-description {
+    font-family: var(--font-body);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: var(--color-black);
+    margin: 0;
+}
+
+.our-story-contact-button {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    padding: var(--spacing-4) var(--spacing-9);
+    border-radius: var(--radius-2);
+    font-family: var(--font-body);
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    border: none;
+    cursor: pointer;
+    transition: opacity 0.3s;
+}
+
+.our-story-contact-button:hover {
+    opacity: 0.9;
+}
+
+.our-story-contact-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: var(--spacing-10) var(--spacing-13) 0;
+    border-top: 1.735px solid #e0e0e0;
+}
+
+.our-story-contact-item {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-6);
+    align-items: center;
+    text-align: center;
+}
+
+.our-story-contact-icon {
+    width: 64px;
+    height: 64px;
+    background-color: var(--color-secondary);
+    border-radius: 96px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.our-story-contact-icon img {
+    width: 24px;
+    height: 24px;
+}
+
+.our-story-contact-details {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-1);
+}
+
+.our-story-contact-label {
+    font-family: var(--font-body);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--color-neutral-500);
+    margin: 0;
+}
+
+.our-story-contact-value {
+    font-family: var(--font-body);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: var(--color-primary);
+    margin: 0;
+}
+

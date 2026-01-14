@@ -1,0 +1,345 @@
+/* Featured Works Section */
+.featured-works {
+    padding: var(--spacing-10) 0;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 400px);
+    grid-template-rows: repeat(2, 480px);
+    gap: 16px;
+    margin: 24px 96px;
+    justify-content: center;
+}
+
+.gallery-item {
+    width: 400px;
+    height: 480px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+    flex-shrink: 0;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    object-position: center center;
+}
+
+/* Bridal & Floral Sections */
+.bridal-floral-sections {
+    display: flex;
+    gap: 24px;
+    padding: var(--spacing-10) 96px;
+    justify-content: center;
+}
+
+.effect-card {
+    width: 612px;
+    height: 707px;
+    position: relative;
+    overflow: hidden;
+    border-radius: var(--radius-3);
+    flex-shrink: 0;
+}
+
+.effect-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 50%;
+}
+
+.effect-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 707px;
+    background-color: var(--color-primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(680px);
+    transition: transform 0.3s ease;
+}
+
+.effect-card:hover .effect-overlay {
+    transform: translateY(0);
+}
+
+.effect-content {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-6);
+    align-items: center;
+    text-align: center;
+    max-width: 356px;
+}
+
+.effect-title {
+    font-family: var(--font-heading);
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: -0.5px;
+    color: var(--color-white);
+}
+
+.effect-description {
+    font-family: var(--font-body);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--color-white);
+}
+
+/* Stories Section */
+.stories-section {
+    padding: var(--spacing-10) var(--spacing-12);
+}
+
+.stories-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: var(--spacing-7);
+}
+
+.stories-text {
+    max-width: 666px;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-6);
+}
+
+.stories-nav {
+    display: flex;
+    gap: var(--spacing-6);
+    align-items: center;
+}
+
+.nav-arrow {
+    border: 1px solid var(--color-primary);
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    transition: all 0.3s;
+}
+
+.nav-arrow:hover {
+    background-color: var(--color-primary);
+}
+
+.nav-arrow img {
+    width: 20px;
+    height: 20px;
+}
+
+.stories-content {
+    display: flex;
+    gap: var(--spacing-10);
+    align-items: center;
+    margin-bottom: var(--spacing-7);
+}
+
+.stories-images {
+    width: 718px;
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.story-image-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.story-main-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 50%;
+}
+
+.story-image-overlay {
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+}
+
+.story-overlay-image {
+    position: absolute;
+    height: 281.42%;
+    left: 0;
+    top: -41.94%;
+    width: 100%;
+    object-fit: cover;
+    object-position: 50% 50%;
+}
+
+.story-featured {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-9);
+}
+
+.story-content {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-6);
+}
+
+.story-label {
+    font-family: var(--font-body);
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    color: var(--color-black);
+}
+
+.story-title {
+    font-family: var(--font-heading);
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 40px;
+    color: var(--color-primary);
+}
+
+.story-subtitle {
+    font-family: 'Lato', sans-serif;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 32px;
+    color: var(--color-neutral-300);
+}
+
+.story-text {
+    font-family: var(--font-body);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: var(--color-black);
+}
+
+.stories-pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 48px;
+}
+
+.pagination-dots {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: var(--color-primary-100);
+    transition: all 0.3s;
+}
+
+.dot.active {
+    width: 40px;
+    height: 8px;
+    border-radius: 58217800px;
+    background-color: var(--color-primary);
+}
+
+/* Contact CTA Section */
+.contact-cta {
+    background-color: var(--color-light-bg);
+    padding: var(--spacing-10) var(--spacing-12);
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-10);
+    align-items: center;
+}
+
+.contact-header {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-7);
+    align-items: center;
+    text-align: center;
+    max-width: 733px;
+}
+
+.contact-header .section-title {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 68px;
+    letter-spacing: -0.5px;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1440px;
+    padding: var(--spacing-10) var(--spacing-13) 0;
+    border-top: 1.735px solid #e0e0e0;
+}
+
+.contact-item {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-6);
+    align-items: center;
+    text-align: center;
+}
+
+.contact-icon {
+    width: 64px;
+    height: 64px;
+    background-color: var(--color-secondary);
+    border-radius: 96px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-icon img {
+    width: 24px;
+    height: 24px;
+}
+
+.contact-details {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-1);
+}
+
+.contact-label {
+    font-family: var(--font-body);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--color-neutral-500);
+}
+
+.contact-value {
+    font-family: var(--font-body);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: var(--color-primary);
+}

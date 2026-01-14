@@ -1,0 +1,259 @@
+/* Hero Section */
+.hero-section {
+    position: relative;
+    width: 100%;
+    height: 800px;
+    overflow: hidden;
+    padding: 0;
+    /* Override base section padding */
+}
+
+.hero-background {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.bg-slide {
+    position: absolute;
+    opacity: 0;
+    /* Layer 1: Background opacity transition */
+    transition: opacity 1.5s cubic-bezier(0.4, 0, 0.2, 1);
+    pointer-events: none;
+    /* Layer 2: Background position transition (handled by CSS positioning) */
+    will-change: opacity;
+}
+
+.bg-slide.active {
+    opacity: 1;
+}
+
+/* Background image positions based on Figma design */
+.bg-slide[data-slide="0"] {
+    height: 1141px;
+    left: calc(95.83% - 42.5px);
+    top: -184px;
+    transform: translateX(-50%);
+    width: 2675px;
+}
+
+.bg-slide[data-slide="1"] {
+    height: 2201px;
+    left: calc(45.83% + 18px);
+    top: -1244px;
+    transform: translateX(-50%);
+    width: 2130px;
+}
+
+.bg-slide[data-slide="2"] {
+    height: 1712px;
+    left: calc(70.83% - 70.5px);
+    top: -755px;
+    transform: translateX(-50%);
+    width: 1899px;
+}
+
+.bg-slide[data-slide="3"] {
+    height: 1602px;
+    left: calc(83.33% - 59px);
+    top: -45px;
+    transform: translateX(-50%);
+    width: 2282px;
+}
+
+.bg-slide[data-slide="4"] {
+    height: 1141px;
+    left: calc(95.83% - 42.5px);
+    top: -184px;
+    transform: translateX(-50%);
+    width: 2675px;
+}
+
+.hero-bg-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 50%;
+}
+
+/* Dual image background for slide 1 (Mc2) */
+.bg-dual-image {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.bg-dual-image .hero-bg-image {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 50%;
+}
+
+.bg-dual-image .hero-bg-image-overlay {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 50%;
+    mix-blend-mode: overlay;
+    opacity: 0.8;
+    transition: opacity 1.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.background-overlay {
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+    background: linear-gradient(to bottom,
+            rgba(226, 214, 176, 0.85) 0%,
+            rgba(226, 214, 176, 0.7) 30%,
+            rgba(226, 214, 176, 0.5) 60%,
+            rgba(226, 214, 176, 0.3) 80%,
+            rgba(226, 214, 176, 0.1) 100%);
+}
+
+/* Hero Content */
+.hero-content {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 1440px;
+    height: 100%;
+    z-index: 10;
+}
+
+.hero-text {
+    position: absolute;
+    left: 96px;
+    top: calc(50% + 124px);
+    transform: translateY(-50%);
+    max-width: 718px;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-10);
+}
+
+.hero-title {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 88px;
+    letter-spacing: -1px;
+    color: var(--color-primary);
+    margin-bottom: var(--spacing-2);
+}
+
+.hero-description {
+    font-family: var(--font-body);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: var(--color-black);
+}
+
+.hero-buttons {
+    display: flex;
+    gap: var(--spacing-4);
+    align-items: center;
+}
+
+/* Hero Slider */
+.hero-slider {
+    position: absolute;
+    left: calc(58.33% - 2px);
+    top: 312px;
+    width: 602px;
+    height: 392px;
+    overflow: hidden;
+    margin-bottom: 100px;
+}
+
+.slider-wrapper {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.slider-container {
+    display: flex;
+    gap: 24px;
+    align-items: flex-end;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    /* Layer 3: Slider container horizontal movement transition */
+    transition: transform 1.5s cubic-bezier(0.4, 0, 0.2, 1);
+    will-change: transform;
+}
+
+/* Slider positions are now controlled by JavaScript for continuous looping */
+
+.slider-item {
+    position: relative;
+    border-radius: var(--radius-3);
+    overflow: hidden;
+    flex-shrink: 0;
+    width: 188px;
+    height: 264px;
+    /* Layer 4: Slider item size transition (width, height, border) - synchronized with other layers */
+    transition: width 1.5s cubic-bezier(0.4, 0, 0.2, 1),
+        height 1.5s cubic-bezier(0.4, 0, 0.2, 1),
+        border 1.5s cubic-bezier(0.4, 0, 0.2, 1);
+    will-change: width, height;
+    border: 4px solid transparent;
+}
+
+.slider-item.active {
+    width: 294px;
+    height: 392px;
+    border: 4px solid var(--color-white);
+}
+
+.slider-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 50%;
+}
+
+/* Special styling for slider items with image wrapper (f1, f5) */
+.slider-image-wrapper {
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+    border-radius: var(--radius-3);
+}
+
+.slider-item.active .slider-image-wrapper img {
+    position: absolute;
+    max-width: none;
+    height: 147.96%;
+    left: -72.21%;
+    top: -47.96%;
+    width: 295.88%;
+    object-fit: cover;
+    object-position: 50% 50%;
+}
+
+.slider-item:not(.active) .slider-image-wrapper img {
+    position: absolute;
+    max-width: none;
+    height: 144.7%;
+    left: -73.48%;
+    top: -44.7%;
+    width: 304.75%;
+    object-fit: cover;
+    object-position: 50% 50%;
+}
