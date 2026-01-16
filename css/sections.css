@@ -145,13 +145,13 @@
 .stories-content {
     display: flex;
     gap: var(--spacing-10);
-    align-items: center;
+    align-items: stretch;
     margin-bottom: var(--spacing-7);
 }
 
 .stories-images {
     width: 718px;
-    height: 100%;
+    align-self: stretch;
     position: relative;
     display: flex;
     flex-direction: row;
@@ -199,6 +199,13 @@
     display: flex;
     flex-direction: column;
     gap: var(--spacing-6);
+}
+
+.story-content .btn-outline {
+    display: block;
+    margin: var(--spacing-7) 0 0;
+    align-self: flex-start;
+    /*margin: var(--spacing-7) 0 0;*/
 }
 
 .story-label {

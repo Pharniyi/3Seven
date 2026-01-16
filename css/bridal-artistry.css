@@ -165,7 +165,7 @@
     font-weight: 400;
     font-size: 18px;
     line-height: 28px;
-    color: var(--color-neutral-300);
+    color: var(--color-black-300);
 }
 
 .bridal-featured-description .not-italic {
@@ -325,7 +325,7 @@
     font-weight: 400;
     font-size: 18px;
     line-height: 28px;
-    color: var(--color-neutral-300);
+    color: var(--color-black-300);
 }
 
 .bridal-story-quote {
@@ -358,7 +358,7 @@
     font-weight: 400;
     font-size: 18px;
     line-height: 28px;
-    color: var(--color-neutral-300);
+    color: var(--color-black-300);
 }
 
 .bridal-story-button {
@@ -413,7 +413,7 @@
     font-weight: 400;
     font-size: 18px;
     line-height: 28px;
-    color: var(--color-neutral-300);
+    color: var(--color-black-300);
 }
 
 .bridal-details-grid {
@@ -523,7 +523,7 @@
     font-weight: 400;
     font-size: 18px;
     line-height: 28px;
-    color: var(--color-neutral-300);
+    color: var(--color-black-300);
 }
 
 .bridal-team-services {
@@ -539,7 +539,7 @@
     font-weight: 500;
     font-size: 20px;
     line-height: 32px;
-    color: #3a3632;
+    color: #401F28;
 }
 
 .bridal-services-list {
@@ -554,7 +554,7 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
-    color: var(--color-neutral-300);
+    color: var(--color-black-300);
     position: relative;
     padding-left: var(--spacing-6);
 }
@@ -563,7 +563,7 @@
     content: '•';
     position: absolute;
     left: 0;
-    color: var(--color-neutral-300);
+    color: var(--color-primary);
     font-size: 16px;
 }
 

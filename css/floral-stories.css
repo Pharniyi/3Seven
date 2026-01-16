@@ -179,7 +179,7 @@ body.floral-stories-page .navbar.sticky .menu-link.active {
     font-weight: 400;
     font-size: 18px;
     line-height: 28px;
-    color: var(--color-neutral-300);
+    color: var(--color-black-300);
 }
 
 .floral-featured-grid {
@@ -261,9 +261,9 @@ body.floral-stories-page .navbar.sticky .menu-link.active {
 .floral-featured-card-description {
     font-family: var(--font-body);
     font-weight: 400;
-    font-size: 16px;
+    font-size: 13px;
     line-height: 24px;
-    color: #899197;
+    color: #111;
 }
 
 .floral-featured-button {
@@ -335,7 +335,7 @@ body.floral-stories-page .navbar.sticky .menu-link.active {
     font-weight: 400;
     font-size: 18px;
     line-height: 28px;
-    color: var(--color-neutral-300);
+    color: var(--color-black-300);
 }
 
 .floral-story-quote {
