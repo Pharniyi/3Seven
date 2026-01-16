@@ -223,6 +223,8 @@
     position: absolute;
     transform: translateX(-50%) translateY(0);
     transition: transform 0.4s ease, background-color 0.3s ease, backdrop-filter 0.3s ease;
+    background: linear-gradient(to top, rgba(226, 214, 176, 0.0) 0%, rgba(226, 214, 176, 0.1) 30%, rgba(226, 214, 176, 0.0) 60%, rgba(226, 214, 176, 0.7) 80%, rgba(226, 214, 176, 0.95) 100%);
+    backdrop-filter: blur(8px);
 }
 
 /* State 2: Nav Hidden (scrolling inside hero section) */
