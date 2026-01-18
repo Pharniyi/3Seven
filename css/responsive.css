@@ -179,7 +179,7 @@
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(3, 380px);
         gap: 20px;
-        margin: 24px 0;
+        margin: 24px auto;
     }
 
     .gallery-item {
@@ -862,7 +862,7 @@
         grid-template-columns: 1fr;
         grid-template-rows: repeat(6, 360px);
         gap: var(--spacing-6);
-        margin: var(--spacing-7) 0;
+        margin: var(--spacing-7) auto;
     }
 
     .gallery-item {
@@ -1135,12 +1135,12 @@
         padding-right: 64px;
     }
 
-    /* Gallery grid - professional alignment with consistent left spacing */
+    /* Gallery grid - professional alignment with consistent centering */
     .gallery-grid {
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(2, 400px);
         gap: 20px;
-        margin: 24px 0;
+        margin: 24px auto;
         max-width: 100%;
     }
 

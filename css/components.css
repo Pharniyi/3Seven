@@ -6,7 +6,7 @@
     left: 50%;
     transform: translateX(-50%) translateY(0);
     width: 100%;
-    max-width: 1440px;
+    
     min-width: 0;
     height: 160px;
     z-index: 9999;

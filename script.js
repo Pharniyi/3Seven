@@ -228,6 +228,7 @@ function findHeroSection() {
         '.our-story-hero',         // Our Story page
         '.bridal-hero',            // Bridal Artistry page
         '.floral-hero',            // Floral Stories page
+        '.stories-love-hero',      // Stories of Love page
     ];
     
     for (const selector of heroSelectors) {

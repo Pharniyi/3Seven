@@ -1,0 +1,408 @@
+body.stories-of-love-page {
+    background-color: #fbf7f0;
+}
+
+body.stories-of-love-page section {
+    padding: var(--spacing-10) var(--spacing-12);
+}
+
+.stories-love-hero {
+    padding-top: calc(var(--spacing-12) + 28px);
+    padding-bottom: var(--spacing-9);
+    background: var(--color-white);
+    max-width: none;
+    margin: 0;
+}
+
+.stories-love-hero-content {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-6);
+    align-items: center;
+    text-align: center;
+}
+
+.stories-love-hero-title {
+    font-family: var(--font-heading);
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 1.1;
+    letter-spacing: -0.5px;
+    color: var(--color-primary);
+}
+
+.stories-love-hero-description {
+    font-family: var(--font-body);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: rgba(17, 17, 17, 0.76);
+    max-width: 720px;
+}
+
+.stories-love-section {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-8);
+}
+
+.stories-love-section {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-8);
+}
+
+.stories-love-story {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-10);
+    align-items: stretch;
+}
+
+.stories-love-story.is-reversed {
+    grid-template-columns: 1fr 1fr;
+}
+
+.stories-love-story.is-reversed .stories-love-story-image {
+    order: 2;
+}
+
+.stories-love-story.is-reversed .stories-love-story-content {
+    order: 1;
+}
+
+.stories-love-story-image {
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    display: flex;
+}
+
+.stories-love-story-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    flex: 1;
+}
+
+.stories-love-story-content {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-5);
+    padding: var(--spacing-8) var(--spacing-7);
+    box-sizing: border-box;
+    justify-content: flex-start;
+}
+
+.stories-love-story-header {
+    font-family: var(--font-text);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    color:var(--color-primary--);
+    margin: 0;
+    margin-bottom: var(--spacing-2);
+    padding-left: 20px;
+}
+
+.stories-love-story-title {
+    font-family: var(--font-heading);
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: -0.8px;
+    color: var(--color-primary);
+    margin: 0;
+    margin-bottom: var(--spacing-2);
+}
+
+.stories-love-story-subtitle {
+    font-family: var(--font-heading);
+    font-weight: 400;
+    font-size: 20px;
+    font-style: italic;
+    line-height: 20px;
+    letter-spacing: -0.3px;
+    color: var(--color-neutral-300);
+    margin: 0;
+    margin-bottom: var(--spacing-6);
+}
+
+.stories-love-story-body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-4);
+}
+
+.stories-love-story-description {
+    font-family: var(--font-body);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: rgba(17, 17, 17, 0.75);
+    margin: 0;
+}
+
+.stories-love-story-testimonial {
+    margin: 0;
+    margin-top: var(--spacing-6);
+    padding: var(--spacing-6) var(--spacing-7);
+    background: #ECE9EA;
+    border-left: 3px solid var(--color-primary);
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.stories-love-story-quote {
+    font-family: var(--font-body);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    font-style: italic;
+    color: rgba(17, 17, 17, 0.8);
+    margin: 0;
+    margin-bottom: var(--spacing-4);
+}
+
+.stories-love-story-cite {
+    font-family: var(--font-text);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: rgba(17, 17, 17, 0.7);
+    font-style: normal;
+    display: block;
+}
+
+.stories-love-collage-item.is-offset {
+    margin-top: 1rem;
+}
+
+@media (max-width: 768px) {
+    .stories-love-collage.top-row .stories-love-collage-item:nth-child(2),
+    .stories-love-collage-item.is-offset {
+        margin-top: 0;
+    }
+}
+
+.stories-love-collage {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: var(--spacing-5);
+}
+
+.stories-love-collage.is-compact {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.stories-love-collage-item {
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+    height: 400px;
+}
+
+.stories-love-collage-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.stories-love-collage-item.is-tall {
+    grid-row: span 1;
+}
+
+.stories-love-cta {
+    background: #f6f1ea;
+    max-width: none;
+    margin: 0;
+}
+
+.stories-love-cta-content {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: var(--spacing-6);
+}
+
+.stories-love-cta-title {
+    font-family: var(--font-heading);
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: -0.5px;
+    color: var(--color-primary);
+}
+
+.stories-love-cta-description {
+    font-family: var(--font-body);
+    font-size: 18px;
+    line-height: 28px;
+    color: rgba(17, 17, 17, 0.82);
+}
+
+.stories-love-cta-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 14px 28px;
+    border-radius: 999px;
+    background: var(--color-primary);
+    color: var(--color-white);
+    font-family: var(--font-text);
+    font-weight: 600;
+    font-size: 16px;
+    transition: transform 0.15s ease, opacity 0.15s ease;
+}
+
+.stories-love-cta-button:hover {
+    transform: translateY(-1px);
+    opacity: 0.95;
+}
+
+@media (max-width: 1024px) {
+    body.stories-of-love-page section {
+        padding: var(--spacing-10) var(--spacing-8);
+    }
+
+    .stories-love-hero-title {
+        font-size: 44px;
+    }
+
+    .stories-love-story {
+        grid-template-columns: 1fr;
+        min-height: auto;
+        gap: var(--spacing-8);
+    }
+
+    .stories-love-story.is-reversed {
+        grid-template-columns: 1fr;
+    }
+
+    .stories-love-story.is-reversed .stories-love-story-image,
+    .stories-love-story.is-reversed .stories-love-story-content {
+        order: initial;
+    }
+
+    .stories-love-story-image {
+        min-height: 450px;
+        height: auto;
+    }
+
+    .stories-love-story-image img {
+        height: 450px;
+    }
+
+    .stories-love-story-content {
+        min-height: auto;
+        height: auto;
+        padding: var(--spacing-7);
+    }
+
+    .stories-love-story-title {
+        font-size: 36px;
+        line-height: 44px;
+    }
+
+    .stories-love-story-subtitle {
+        font-size: 22px;
+        line-height: 30px;
+    }
+
+    .stories-love-collage {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .stories-love-collage-item {
+        height: 350px;
+    }
+
+    .stories-love-collage-item.is-tall {
+        grid-row: span 1;
+    }
+}
+
+@media (max-width: 600px) {
+    body.stories-of-love-page section {
+        padding: var(--spacing-9) var(--spacing-6);
+    }
+
+    .stories-love-hero {
+        padding-top: calc(var(--spacing-12) + 20px);
+    }
+
+    .stories-love-hero-title {
+        font-size: 34px;
+    }
+
+    .stories-love-story {
+        gap: var(--spacing-6);
+    }
+
+    .stories-love-story-image {
+        min-height: 350px;
+    }
+
+    .stories-love-story-image img {
+        height: 350px;
+    }
+
+    .stories-love-story-content {
+        padding: var(--spacing-6);
+        gap: var(--spacing-4);
+    }
+
+    .stories-love-story-header {
+        font-size: 13px;
+    }
+
+    .stories-love-story-title {
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+    .stories-love-story-subtitle {
+        font-size: 20px;
+        line-height: 28px;
+        margin-bottom: var(--spacing-5);
+    }
+
+    .stories-love-story-description {
+        font-size: 15px;
+        line-height: 24px;
+    }
+
+    .stories-love-story-testimonial {
+        padding: var(--spacing-5) var(--spacing-6);
+        margin-top: var(--spacing-5);
+    }
+
+    .stories-love-story-quote {
+        font-size: 15px;
+        line-height: 24px;
+    }
+
+    .stories-love-story-cite {
+        font-size: 13px;
+    }
+
+    .stories-love-cta-title {
+        font-size: 28px;
+        line-height: 36px;
+    }
+
+    .stories-love-collage {
+        grid-template-columns: 1fr;
+    }
+
+    .stories-love-collage-item {
+        height: 300px;
+    }
+}

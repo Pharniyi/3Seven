@@ -4,12 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Showcase | 3Sevens || Bridal Artistry & Floral Design</title>
+    <title>Stories of Love | 3Sevens || Bridal Artistry & Floral Design</title>
     <link rel="icon" type="image/png" href="assets/logo-black.png">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/stories-of-love.css">
 </head>
 
-<body class="showcase-page">
+<body class="stories-of-love-page">
     <nav class="navbar">
         <div class="navbar-social">
             <a href="#" class="social-link">
@@ -61,13 +62,12 @@
             </div>
             <div class="navbar-logo-container">
                 <a href="index.html">
-                    <img src="assets/3sevenlogowhite.svg" alt="3Sevens Logo"
-                        class="navbar-logo">
+                    <img src="assets/3sevenlogowhite.svg" alt="3Sevens Logo" class="navbar-logo">
                 </a>
-                
+
             </div>
             <div class="navbar-menu-right">
-                <a href="showcase.html" class="menu-link active">Showcase</a>
+                <a href="showcase.html" class="menu-link">Showcase</a>
                 <a href="our-story.html" class="menu-link">Our Story</a>
             </div>
         </div>
@@ -79,16 +79,12 @@
         </button>
     </nav>
 
-    <!-- Mobile Menu Overlay -->
     <div class="mobile-menu-overlay" id="mobile-menu-overlay">
         <div class="mobile-menu-header">
             <div class="mobile-menu-social">
-                <a href="#" class="social-link"><img
-                        src="https://www.figma.com/api/mcp/asset/e3d699ca-c169-4789-a6b0-00cb5bcc3393" alt="Facebook"></a>
-                <a href="#" class="social-link"><img
-                        src="https://www.figma.com/api/mcp/asset/14ed4d38-ce95-4dfc-a5a4-cb8206da6de4" alt="TikTok"></a>
-                <a href="#" class="social-link"><img
-                        src="https://www.figma.com/api/mcp/asset/9fb56d34-bdfc-4bf3-b65d-3bb712921436" alt="Instagram"></a>
+                <a href="#" class="social-link"><img src="https://www.figma.com/api/mcp/asset/e3d699ca-c169-4789-a6b0-00cb5bcc3393" alt="Facebook"></a>
+                <a href="#" class="social-link"><img src="https://www.figma.com/api/mcp/asset/14ed4d38-ce95-4dfc-a5a4-cb8206da6de4" alt="TikTok"></a>
+                <a href="#" class="social-link"><img src="https://www.figma.com/api/mcp/asset/9fb56d34-bdfc-4bf3-b65d-3bb712921436" alt="Instagram"></a>
             </div>
             <button class="mobile-menu-close" id="mobile-menu-close" aria-label="Close mobile menu">
                 <img src="https://www.figma.com/api/mcp/asset/87ca4aac-f52f-4193-a848-b38331f1c1d4" alt="Close">
@@ -114,146 +110,171 @@
     <!-- Hero Section -->
     <section class="showcase-hero">
         <div class="showcase-hero-content">
-            <h1 class="showcase-hero-title">Our Showcase</h1>
-            <p class="showcase-hero-description">A visual journey through our most cherished creations — where bridal artistry meets floral perfection. Each image tells a story of love, elegance, and meticulous craftsmanship.</p>
+            <h1 class="showcase-hero-title">Stories of Love</h1>
+            <p class="showcase-hero-description">Behind every celebration, there's a love story waiting to bloom. Here, we share the beautiful journeys of our couples—stories of romance, artistry, and unforgettable moments.</p>
         </div>
     </section>
 
-    <!-- Filter Section (Sticky) -->
-    <section class="showcase-filters">
-        <div class="showcase-filters-container">
-            <button class="filter-button active" data-filter="all">
-                <span>All Work</span>
-                <span class="filter-count">(12)</span>
-            </button>
-            <button class="filter-button" data-filter="bridal">
-                <span>Bridal Artistry</span>
-                <span class="filter-count">(12)</span>
-            </button>
-            <button class="filter-button" data-filter="floral">
-                <span>Floral Design</span>
-                <span class="filter-count">(12)</span>
-            </button>
-            <button class="filter-button" data-filter="event">
-                <span>Event Styling</span>
-                <span class="filter-count">(12)</span>
-            </button>
+    <section class="stories-love-section">
+        <div class="stories-love-story">
+            <div class="stories-love-story-image">
+                <img src="assets/Story Image (1).png" alt="Amara & Chidi - A Garden Romance">
+            </div>
+            <div class="stories-love-story-content">
+                <div class="section-divider"></div>
+                <p class="stories-love-story-header">
+                   April 2015
+                     <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8" fill="none">
+                    <path d="M0 4.01075C0 3.45878 0.104223 2.93907 0.312668 2.45161C0.528302 1.96416 0.815813 1.54122 1.1752 1.1828C1.53459 0.817204 1.95508 0.530466 2.43666 0.322581C2.92543 0.107527 3.44295 0 3.98922 0C4.54268 0 5.0602 0.107527 5.54178 0.322581C6.03055 0.530466 6.45463 0.817204 6.81402 1.1828C7.18059 1.54122 7.4681 1.96416 7.67655 2.45161C7.89218 2.93907 8 3.45878 8 4.01075C8 4.56272 7.89218 5.08244 7.67655 5.56989C7.4681 6.05018 7.18059 6.46953 6.81402 6.82796C6.45463 7.18638 6.03055 7.47312 5.54178 7.68817C5.0602 7.89606 4.54268 8 3.98922 8C3.44295 8 2.92543 7.89606 2.43666 7.68817C1.95508 7.47312 1.53459 7.18638 1.1752 6.82796C0.815813 6.46953 0.528302 6.05018 0.312668 5.56989C0.104223 5.08244 0 4.56272 0 4.01075Z" fill="#401F28"/>
+                  </svg> Lagos Botanical Gardens
+                </p>
+                <h2 class="stories-love-story-title">Amara & Chidi</h2>
+                <p class="stories-love-story-subtitle">A Garden Romance</p>
+                <div class="stories-love-story-body">
+                    <p class="stories-love-story-description">When Amara and Chidi first met at a friend's garden party, they knew their wedding would need to honor that special place where it all began. Under a canopy of blooms and soft natural light, their love story unfolded in the most magical way. Every detail reflected their journey — from the delicate ivory petals that framed the ceremony arch to the flowing silhouette of Amara's custom gown. Her bridal look was a perfect blend of classic romance and modern elegance, featuring hand-embroidered lace that caught the sunlight as she walked down the garden aisle.</p>
+                </div>
+                <blockquote class="stories-love-story-testimonial">
+                    <p class="stories-love-story-quote">"3SEVENS transformed our vision into something beyond our wildest dreams. From the first consultation to the final moment, every detail was handled with such care and artistry. Amara looked absolutely breathtaking, and the florals took our breath away."</p>
+                    <cite class="stories-love-story-cite">— Amara, Lagos Botanical Gardens.</cite>
+                </blockquote>
+            </div>
+        </div>
+
+        <div class="stories-love-collage">
+            <div class="stories-love-collage-item">
+                <img src="assets/story1.png" alt="Bride in Field">
+            </div>
+            <div class="stories-love-collage-item is-offset">
+                <img src="assets/story2.png" alt="Red Tulips Bouquet">
+            </div>
+            <div class="stories-love-collage-item">
+                <img src="assets/story3.png" alt="Bride Portrait">
+            </div>
         </div>
     </section>
 
-    <!-- Gallery Section -->
-    <section class="showcase-gallery">
-        <div class="showcase-gallery-container">
-            <!-- Column 1 (5 images) -->
-            <div class="gallery-column">
-                <div class="showcase-gallery-item">
-                    <img src="assets/showcase1.png" alt="Red Tulips Bouquet">
+    <section class="stories-love-section">
+        <div class="stories-love-story">
+            <div class="stories-love-story-content">
+                <div class="section-divider"></div>
+                <p class="stories-love-story-header">
+                    March 2025
+                     <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8" fill="none">
+                    <path d="M0 4.01075C0 3.45878 0.104223 2.93907 0.312668 2.45161C0.528302 1.96416 0.815813 1.54122 1.1752 1.1828C1.53459 0.817204 1.95508 0.530466 2.43666 0.322581C2.92543 0.107527 3.44295 0 3.98922 0C4.54268 0 5.0602 0.107527 5.54178 0.322581C6.03055 0.530466 6.45463 0.817204 6.81402 1.1828C7.18059 1.54122 7.4681 1.96416 7.67655 2.45161C7.89218 2.93907 8 3.45878 8 4.01075C8 4.56272 7.89218 5.08244 7.67655 5.56989C7.4681 6.05018 7.18059 6.46953 6.81402 6.82796C6.45463 7.18638 6.03055 7.47312 5.54178 7.68817C5.0602 7.89606 4.54268 8 3.98922 8C3.44295 8 2.92543 7.89606 2.43666 7.68817C1.95508 7.47312 1.53459 7.18638 1.1752 6.82796C0.815813 6.46953 0.528302 6.05018 0.312668 5.56989C0.104223 5.08244 0 4.56272 0 4.01075Z" fill="#401F28"/>
+                  </svg>Transcorp Hilton, Abuja
+                </p>
+                <h2 class="stories-love-story-title">Zainab & Ibrahim</h2>
+                <p class="stories-love-story-subtitle">Timeless Elegance</p>
+                <div class="stories-love-story-body">
+                    <p class="stories-love-story-description">Zainab and Ibrahim's celebration was the epitome of refined luxury and cultural richness. Every detail reflected their sophisticated taste and the depth of their connection. From the intricate lace details of Zainab's gown to the cascading floral installations that transformed the ballroom, their wedding was a testament to enduring love and timeless beauty. The fusion of traditional elements with contemporary elegance created an unforgettable atmosphere that honored both their heritage and their modern love story.</p>
                 </div>
-                <div class="showcase-gallery-item">
-                    <img src="assets/showcase4.png" alt="Bride Portrait">
-                </div>
-                <div class="showcase-gallery-item">
-                    <img src="assets/showcase7.png" alt="Pink Roses Bouquet">
-                </div>
-                <div class="showcase-gallery-item">
-                    <img src="assets/showcase10.png" alt="Bride in Field">
-                </div>
-                <div class="showcase-gallery-item">
-                    <img src="assets/showcase13.png" alt="Bride at Mirror">
-                </div>
-                <div class="showcase-gallery-item">
-                    <img src="assets/showcase16.png" alt="Bride at Mirror">
-                </div>
+                <blockquote class="stories-love-story-testimonial">
+                    <p class="stories-love-story-quote">"Working with 3SEVENS was an absolute dream. They understood our vision for a grand yet intimate celebration. Zainab has never looked more beautiful, and our guests are still talking about the stunning floral arrangements months later."</p>
+                    <cite class="stories-love-story-cite">— Zainab, Transcorp Hilton, Abuja.</cite>
+                </blockquote>
             </div>
-            <!-- Column 2 (5 images) -->
-            <div class="gallery-column">
-                <div class="showcase-gallery-item">
-                    <img src="assets/showcase2.png" alt="Pink and White Bouquet">
-                </div>
-                <div class="showcase-gallery-item">
-                    <img src="assets/showcase5.png" alt="Full Body Bride">
-                </div>
-                <div class="showcase-gallery-item">
-                    <img src="assets/showcase8.png" alt="Bride with Veil">
-                </div>
-                <div class="showcase-gallery-item">
-                    <img src="assets/showcase11.png" alt="Pink Roses Bouquet Large">
-                </div>
-                <div class="showcase-gallery-item">
-                    <img src="assets/showcase14.png" alt="Woman with Headwrap">
-                </div>
-                <div class="showcase-gallery-item">
-                    <img src="assets/showcase17.png" alt="Woman with Headwrap">
-                </div>
+            <div class="stories-love-story-image">
+                <img src="assets/story4.png" alt="Amara & Chidi - A Garden Romance">
             </div>
-            <!-- Column 3 (5 images) -->
-            <div class="gallery-column">
-                <div class="showcase-gallery-item">
-                    <img src="assets/showcase3.png" alt="White Peonies">
-                </div>
-                <div class="showcase-gallery-item">
-                    <img src="assets/showcase6.png" alt="Pink Roses Flat Lay">
-                </div>
-                <div class="showcase-gallery-item">
-                    <img src="assets/showcase9.png" alt="Bride in Ball Gown">
-                </div>
-                <div class="showcase-gallery-item">
-                    <img src="assets/showcase12.png" alt="White Tulips Bouquet">
-                </div>
-                <div class="showcase-gallery-item">
-                    <img src="assets/showcase15.png" alt="Bride with White Tulips">
-                </div>
-                <div class="showcase-gallery-item">
-                    <img src="assets/showcase18.png" alt="Bride at Mirror">
-                </div>
-            </div>
+        </div>
 
-            
+        <div class="stories-love-collage">
+            <div class="stories-love-collage-item">
+                <img src="assets/story5.png" alt="Bride in Field">
+            </div>
+            <div class="stories-love-collage-item is-offset">
+                <img src="assets/story6.png" alt="Red Tulips Bouquet">
+            </div>
+            <div class="stories-love-collage-item">
+                <img src="assets/story7.png" alt="Bride Portrait">
+            </div>
+        </div>
+    </section>
+
+
+    <section class="stories-love-section">
+        <div class="stories-love-story">
+            <div class="stories-love-story-image">
+                <img src="assets/story8.png" alt="Amara & Chidi - A Garden Romance">
+            </div>
+            <div class="stories-love-story-content">
+                <div class="section-divider"></div>
+                <p class="stories-love-story-header">
+                    February 2025
+                     <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8" fill="none">
+                    <path d="M0 4.01075C0 3.45878 0.104223 2.93907 0.312668 2.45161C0.528302 1.96416 0.815813 1.54122 1.1752 1.1828C1.53459 0.817204 1.95508 0.530466 2.43666 0.322581C2.92543 0.107527 3.44295 0 3.98922 0C4.54268 0 5.0602 0.107527 5.54178 0.322581C6.03055 0.530466 6.45463 0.817204 6.81402 1.1828C7.18059 1.54122 7.4681 1.96416 7.67655 2.45161C7.89218 2.93907 8 3.45878 8 4.01075C8 4.56272 7.89218 5.08244 7.67655 5.56989C7.4681 6.05018 7.18059 6.46953 6.81402 6.82796C6.45463 7.18638 6.03055 7.47312 5.54178 7.68817C5.0602 7.89606 4.54268 8 3.98922 8C3.44295 8 2.92543 7.89606 2.43666 7.68817C1.95508 7.47312 1.53459 7.18638 1.1752 6.82796C0.815813 6.46953 0.528302 6.05018 0.312668 5.56989C0.104223 5.08244 0 4.56272 0 4.01075Z" fill="#401F28"/>
+                  </svg> Lekki Conservation Centre
+                </p>
+                <h2 class="stories-love-story-title">Ngozi & Tunde</h2>
+                <p class="stories-love-story-subtitle"Botanical Dreams</p>
+                <div class="stories-love-story-body">
+                    <p class="stories-love-story-description">Surrounded by lush florals and natural beauty, Ngozi and Tunde celebrated love in its purest form. As nature enthusiasts who met on a hiking trail, they wanted their wedding to reflect their love for the outdoors and organic beauty. The ceremony took place beneath towering trees, with the natural canopy providing shade and ambiance. The organic elegance of their wedding design captured the essence of their gentle, authentic romance, with every element thoughtfully chosen to complement the natural surroundings.</p>
+                </div>
+                <blockquote class="stories-love-story-testimonial">
+                    <p class="stories-love-story-quote">"3SEVENS brought our botanical dream to life in ways we couldn't have imagined. They respected our desire for natural beauty while adding touches of elegance that made everything feel so special. Ngozi felt like a forest goddess, and the florals were absolutely magical."</p>
+                    <cite class="stories-love-story-cite">— Ngozi,  Lekki Conservation Centre.</cite>
+                </blockquote>
+            </div>
+        </div>
+
+        <div class="stories-love-collage">
+            <div class="stories-love-collage-item">
+                <img src="assets/story9.png" alt="Bride in Field">
+            </div>
+            <div class="stories-love-collage-item is-offset">
+                <img src="assets/story10.png" alt="Red Tulips Bouquet">
+            </div>
+            <div class="stories-love-collage-item">
+                <img src="assets/story11.png" alt="Bride Portrait">
+            </div>
         </div>
     </section>
 
     <!-- Contact CTA Section -->
-    <section class="showcase-contact-cta">
-        <div class="showcase-contact-header">
+    <section class="bridal-contact-cta">
+        <div class="bridal-contact-header">
             <div class="section-divider"></div>
-            <h2 class="showcase-contact-title">Let's Create Something Beautiful Together</h2>
-            <p class="showcase-contact-description">Whether you're a bride, a creative, or simply someone who loves beauty — we'd love to tell your story.</p>
-            <button class="showcase-contact-button">Start Your Journey With Us</button>
+            <h2 class="bridal-contact-title">Ready to Write Your Story?</h2>
+            <p class="bridal-contact-description">Let’s craft a bridal look and floral story that feels like you — timeless, intentional, and unforgettable.</p>
+            <button class="bridal-contact-button-primary">Get in Touch</button>
         </div>
-        <div class="showcase-contact-info">
-            <div class="showcase-contact-item">
-                <div class="showcase-contact-icon">
+        
+            
+            
+        <div class="bridal-contact-info">
+            <div class="bridal-contact-item">
+                <div class="bridal-contact-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                         <path d="M22 7L13.009 12.727C12.7039 12.9042 12.3573 12.9976 12.0045 12.9976C11.6517 12.9976 11.3051 12.9042 11 12.727L2 7" stroke="#401F28" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         <path d="M20 4H4C2.89543 4 2 4.89543 2 6V18C2 19.1046 2.89543 20 4 20H20C21.1046 20 22 19.1046 22 18V6C22 4.89543 21.1046 4 20 4Z" stroke="#401F28" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                       </svg>
                 </div>
-                <div class="showcase-contact-details">
-                    <p class="showcase-contact-label">Email Us</p>
-                    <p class="showcase-contact-value">hello@3Sevens.ng</p>
+                <div class="bridal-contact-details">
+                    <p class="bridal-contact-label">Email Us</p>
+                    <p class="bridal-contact-value">hello@3Sevens.ng</p>
                 </div>
             </div>
-            <div class="showcase-contact-item">
-                <div class="showcase-contact-icon">
+            <div class="bridal-contact-item">
+                <div class="bridal-contact-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                         <path d="M13.832 16.568C14.0385 16.6629 14.2712 16.6845 14.4917 16.6294C14.7122 16.5744 14.9073 16.4458 15.045 16.265L15.4 15.8C15.5863 15.5516 15.8279 15.35 16.1056 15.2111C16.3833 15.0723 16.6895 15 17 15H20C20.5304 15 21.0391 15.2107 21.4142 15.5858C21.7893 15.9609 22 16.4696 22 17V20C22 20.5304 21.7893 21.0391 21.4142 21.4142C21.0391 21.7893 20.5304 22 20 22C15.2261 22 10.6477 20.1036 7.27208 16.7279C3.89642 13.3523 2 8.7739 2 4C2 3.46957 2.21071 2.96086 2.58579 2.58579C2.96086 2.21071 3.46957 2 4 2H7C7.53043 2 8.03914 2.21071 8.41421 2.58579C8.78929 2.96086 9 3.46957 9 4V7C9 7.31049 8.92771 7.61672 8.78886 7.89443C8.65 8.17214 8.44839 8.41371 8.2 8.6L7.732 8.951C7.54842 9.09118 7.41902 9.29059 7.36579 9.51535C7.31256 9.74012 7.33878 9.97638 7.44 10.184C8.80668 12.9599 11.0544 15.2048 13.832 16.568Z" stroke="#401F28" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                       </svg>
                 </div>
-                <div class="showcase-contact-details">
-                    <p class="showcase-contact-label">Call Us</p>
-                    <p class="showcase-contact-value">+234 (0) 000 0000</p>
+                <div class="bridal-contact-details">
+                    <p class="bridal-contact-label">Call Us</p>
+                    <p class="bridal-contact-value">+234 (0) 000 0000</p>
                 </div>
             </div>
-            <div class="showcase-contact-item">
-                <div class="showcase-contact-icon">
+            <div class="bridal-contact-item">
+                <div class="bridal-contact-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                         <path d="M20 10C20 14.993 14.461 20.193 12.601 21.799C12.4277 21.9293 12.2168 21.9998 12 21.9998C11.7832 21.9998 11.5723 21.9293 11.399 21.799C9.539 20.193 4 14.993 4 10C4 7.87827 4.84285 5.84344 6.34315 4.34315C7.84344 2.84285 9.87827 2 12 2C14.1217 2 16.1566 2.84285 17.6569 4.34315C19.1571 5.84344 20 7.87827 20 10Z" stroke="#401F28" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         <path d="M12 13C13.6569 13 15 11.6569 15 10C15 8.34315 13.6569 7 12 7C10.3431 7 9 8.34315 9 10C9 11.6569 10.3431 13 12 13Z" stroke="#401F28" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                       </svg>
                 </div>
-                <div class="showcase-contact-details">
-                    <p class="showcase-contact-label">Visit Us</p>
-                    <p class="showcase-contact-value">Lagos, Nigeria</p>
+                <div class="bridal-contact-details">
+                    <p class="bridal-contact-label">Visit Us</p>
+                    <p class="bridal-contact-value">Lagos, Nigeria</p>
                 </div>
             </div>
         </div>
@@ -263,8 +284,7 @@
     <footer class="footer">
         <div class="footer-content">
             <div class="footer-brand">
-                <img src="assets/3sevenlogowhite.svg" alt="3Sevens Logo"
-                    class="footer-logo">
+                <img src="assets/3sevenlogowhite.svg" alt="3Sevens Logo" class="footer-logo">
                 <p class="footer-tagline">The Art of Bridal & Floral Expression</p>
                 <p class="footer-description">Celebrating love and individuality through timeless bridal artistry and
                     floral storytelling in Nigeria and beyond.</p>
@@ -283,8 +303,8 @@
                 <h4 class="footer-heading">Other Links</h4>
                 <ul class="footer-list">
                     <li><a href="stories-of-love.html">Stories of Love</a></li>
-                    <li><a href="floral-stories.html">Our Story</a></li>
-                    <li><a href="showcase.html">Contact Us</a></li>
+                    <li><a href="our-story.html">Our Story</a></li>
+                    <li><a href="contact-us.html">Contact Us</a></li>
                 </ul>
             </div>
 
@@ -301,12 +321,6 @@
                       </svg></a>
                     <a href="#" class="social-icon-circle"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
                         <path d="M9.14178 7.0541L13.6085 1.82422H12.5498L8.67243 6.36508L5.57402 1.82422H2.00098L6.68564 8.69153L2.00098 14.1755H3.05966L7.15499 9.37967L10.4272 14.1755H14.0002L9.14178 7.0541ZM7.69227 8.75152L7.21762 8.06779L3.44078 2.62705H5.06674L8.11397 7.01793L8.58862 7.70166L12.5507 13.4097H10.9248L7.69227 8.75152Z" fill="#E2D6B0"/>
-                      </svg></a>
-                    <a href="#" class="social-icon-circle"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                        <path d="M13.4665 6.73341C13.4665 6.88008 13.3465 7.00075 13.1999 6.99341C12.4162 6.95413 11.6509 6.74243 10.9585 6.37341C10.7712 6.27341 10.5332 6.40341 10.5332 6.61608V10.3334C10.5332 11.1132 10.3052 11.8759 9.87739 12.5278C9.44957 13.1797 8.84054 13.6924 8.1252 14.0027C7.40986 14.3131 6.61942 14.4076 5.85108 14.2746C5.08275 14.1416 4.37004 13.787 3.8006 13.2543C3.23116 12.7216 2.82984 12.0341 2.64598 11.2763C2.46213 10.5185 2.50376 9.72356 2.76577 8.98915C3.02777 8.25473 3.49872 7.6129 4.12069 7.14261C4.74265 6.67231 5.48852 6.39406 6.26654 6.34208C6.30131 6.34024 6.33608 6.34559 6.36869 6.35779C6.4013 6.36999 6.43105 6.38878 6.45607 6.41299C6.48109 6.4372 6.50086 6.46631 6.51413 6.4985C6.5274 6.53069 6.53389 6.56527 6.5332 6.60008V8.46675C6.5332 8.61341 6.4132 8.73141 6.26787 8.75541C5.96699 8.80601 5.68686 8.94158 5.46048 9.14613C5.23411 9.35069 5.07095 9.6157 4.99022 9.90993C4.9095 10.2042 4.91458 10.5153 5.00487 10.8068C5.09517 11.0982 5.2669 11.3577 5.49983 11.5548C5.73276 11.7518 6.01718 11.8782 6.31955 11.9189C6.62192 11.9597 6.92963 11.9131 7.20641 11.7847C7.48319 11.6564 7.7175 11.4515 7.88171 11.1944C8.04591 10.9372 8.13317 10.6385 8.1332 10.3334V1.93341C8.1332 1.86269 8.1613 1.79486 8.21131 1.74485C8.26132 1.69484 8.32915 1.66675 8.39987 1.66675H10.2665C10.3378 1.66857 10.4059 1.6969 10.4574 1.74621C10.509 1.79552 10.5403 1.86227 10.5452 1.93341C10.6075 2.61656 10.9074 3.25626 11.3925 3.74126C11.8776 4.22627 12.5174 4.52591 13.2005 4.58808C13.3472 4.60141 13.4672 4.71941 13.4672 4.86675L13.4665 6.73341Z" stroke="#E2D6B0" stroke-linecap="round" stroke-linejoin="round"/>
-                      </svg></a>
-                    <a href="#" class="social-icon-circle"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M1.83333 0C1.3471 0 0.880788 0.193154 0.536971 0.536971C0.193154 0.880788 0 1.3471 0 1.83333C0 2.31956 0.193154 2.78588 0.536971 3.1297C0.880788 3.47351 1.3471 3.66667 1.83333 3.66667C2.31956 3.66667 2.78588 3.47351 3.1297 3.1297C3.47351 2.78588 3.66667 2.31956 3.66667 1.83333C3.66667 1.3471 3.47351 0.880788 3.1297 0.536971C2.78588 0.193154 2.31956 0 1.83333 0ZM1 1.83333C1 1.61232 1.0878 1.40036 1.24408 1.24408C1.40036 1.0878 1.61232 1 1.83333 1C2.05435 1 2.26631 1.0878 2.42259 1.24408C2.57887 1.40036 2.66667 1.61232 2.66667 1.83333C2.66667 2.05435 2.57887 2.26631 2.42259 2.42259C2.26631 2.57887 2.05435 2.66667 1.83333 2.66667C1.61232 2.66667 1.40036 2.57887 1.24408 2.42259C1.0878 2.26631 1 2.05435 1 1.83333ZM0 4.5C0 4.36739 0.0526784 4.24021 0.146447 4.14645C0.240215 4.05268 0.367392 4 0.5 4H3.16667C3.29927 4 3.42645 4.05268 3.52022 4.14645C3.61399 4.24021 3.66667 4.36739 3.66667 4.5V13.1667C3.66667 13.2993 3.61399 13.4265 3.52022 13.5202C3.42645 13.614 3.29927 13.6667 3.16667 13.6667H0.5C0.367392 13.6667 0.240215 13.614 0.146447 13.5202C0.0526784 13.4265 0 13.2993 0 13.1667V4.5ZM1 5V12.6667H2.66667V5H1ZM4.66667 4.5C4.66667 4.36739 4.71935 4.24021 4.81311 4.14645C4.90688 4.05268 5.03406 4 5.16667 4H7.83333C7.96594 4 8.09312 4.05268 8.18689 4.14645C8.28065 4.24021 8.33333 4.36739 8.33333 4.5V4.78933L8.62333 4.66467C9.12337 4.45107 9.65382 4.31722 10.1953 4.268C12.0453 4.1 13.6667 5.55333 13.6667 7.42V13.1667C13.6667 13.2993 13.614 13.4265 13.5202 13.5202C13.4265 13.614 13.2993 13.6667 13.1667 13.6667H10.5C10.3674 13.6667 10.2402 13.614 10.1464 13.5202C10.0527 13.4265 10 13.2993 10 13.1667V8.5C10 8.27899 9.9122 8.06703 9.75592 7.91074C9.59964 7.75446 9.38768 7.66667 9.16667 7.66667C8.94565 7.66667 8.73369 7.75446 8.57741 7.91074C8.42113 8.06703 8.33333 8.27899 8.33333 8.5V13.1667C8.33333 13.2993 8.28065 13.4265 8.18689 13.5202C8.09312 13.614 7.96594 13.6667 7.83333 13.6667H5.16667C5.03406 13.6667 4.90688 13.614 4.81311 13.5202C4.71935 13.4265 4.66667 13.2993 4.66667 13.1667V4.5ZM5.66667 5V12.6667H7.33333V8.5C7.33333 8.01377 7.52649 7.54745 7.8703 7.20364C8.21412 6.85982 8.68044 6.66667 9.16667 6.66667C9.6529 6.66667 10.1192 6.85982 10.463 7.20364C10.8068 7.54745 11 8.01377 11 8.5V12.6667H12.6667V7.42C12.6667 6.15067 11.5593 5.148 10.2867 5.264C9.84943 5.30367 9.42112 5.41165 9.01733 5.584L8.03067 6.00733C7.95456 6.04002 7.87153 6.05329 7.78903 6.04596C7.70653 6.03862 7.62715 6.0109 7.55801 5.96529C7.48887 5.91968 7.43215 5.85762 7.39293 5.78466C7.35372 5.71171 7.33324 5.63016 7.33333 5.54733V5H5.66667Z" fill="#E2D6B0"/>
                       </svg></a>
                 </div>
             </div>
@@ -325,4 +339,3 @@
 </body>
 
 </html>
-
